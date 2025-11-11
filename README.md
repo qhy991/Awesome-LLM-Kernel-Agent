@@ -21,6 +21,7 @@
 | [**Kevin: Multi-Turn RL for Generating CUDA Kernels**](https://openreview.net/forum?id=HLeyRyV55o) <br> | EXAIT Workshop @ ICML | 2025.06 | - | CUDA, Finetuning |
 | [**GPU Kernel Scientist: An LLM-Driven Framework for Iterative Kernel Optimization**](https://openreview.net/forum?id=K4XSvet59a) <br> | ES-FoMo Workshop @ ICML | 2025.06 | - | AMD, Iterative Search |
 | [**CUDA-LLM: LLMs Can Write Efficient CUDA Kernels**](https://arxiv.org/abs/2506.09092) <br> | arXiv | 2025.06 | - | CUDA, Prompt Engineering (?) |
+| [**AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery**](https://arxiv.org/abs/2506.13131) <br> | arXiv | 2025.06 | - | General, Coding Agent |
 | [**The AI CUDA Engineer: Agentic CUDA Kernel Discovery, Optimization and Composition**](https://pub.sakana.ai/ai-cuda-engineer) <br> | arXiv | 2025.02 | [HuggingFace](https://huggingface.co/datasets/SakanaAI/AI-CUDA-Engineer-Archive) | CUDA, Agent + Iterative Search + RAG |
 
 ## Datasets and Benchmarks
@@ -30,10 +31,20 @@
 | [**NPUEval: Optimizing NPU Kernels with LLMs and Open Source Compilers**](https://arxiv.org/abs/2507.14403) <br> | arXiv | 2025.07 | - | NPU |
 | ![Star](https://img.shields.io/github/stars/thunlp/TritonBench.svg?style=social&label=Star) <br> [**TritonBench: Benchmarking Large Language Model Capabilities for Generating Triton Operators**](https://arxiv.org/abs/2502.14752) <br> | ICML | 2025.02 | [Github](https://github.com/thunlp/TritonBench) | Triton (CUDA) |
 | ![Star](https://img.shields.io/github/stars/ScalingIntelligence/KernelBench.svg?style=social&label=Star) <br> [**KernelBench: Can LLMs Write Efficient GPU Kernels?**](https://arxiv.org/abs/2502.10517) <br> | ICML | 2025.02 | [Github](https://github.com/ScalingIntelligence/KernelBench) | CUDA |
+| [**EquiBench: Benchmarking Code Reasoning Capabilities of Large Language Models via Equivalence Checking**](https://arxiv.org/abs/2502.12466) <br> | arXiv | 2025.02 | - | Code Reasoning, Equivalence Checking |
 | [**Comparing Llama-2 and GPT-3 LLMs for HPC kernels generation**](https://arxiv.org/abs/2309.07103) <br> | [LCPC](http://www.lcpcworkshop.org/LCPC23/) | 2023.09 | - |  |
+
+## Traditional Kernel Optimization
+|  Title  |   Date   |   topic   |
+|:--------|:--------:|:--------:|
+| [**Can Tensor Cores Benefit Memory-Bound Kernels? (No!)**](https://arxiv.org/abs/2502.16851) <br> | arXiv | 2025.02 | Tensor Core, Memory-Bound, Analysis |
+| [**How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores**](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) <br> | Blog | 2024.08 | Tensor Core, Matrix Multiplication, Tutorial |
+| [**Tensor Kernels (TK)**](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) <br> | Blog | 2024.05 | Tensor Core, Kernel Optimization |
+| [**CUDA Matrix Multiplication**](https://siboehm.com/articles/22/CUDA-MMM) <br> | Blog | 2022.06 | CUDA, Matrix Multiplication, Tutorial |
 
 ## Others
 |  Title  |   Date   |   topic   |
 |:--------|:--------:|:--------:|
 |[AMD Developer Challenge 2025](https://www.datamonsters.com/amd-developer-challenge-2025)| 2025.04 | AMD GPU |
+|[**Automating GPU Kernel Generation with DeepSeek-R1 and Inference Time Scaling**](https://developer.nvidia.com/blog/automating-gpu-kernel-generation-with-deepseek-r1-and-inference-time-scaling/) <br> | NVIDIA Blog | 2025 | CUDA, DeepSeek-R1 |
 |[GPU Mode Learderboard](https://www.gpumode.com/)| - | AMD + CUDA |
