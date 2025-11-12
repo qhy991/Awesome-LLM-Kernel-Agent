@@ -6,6 +6,7 @@
 | [**KernelFalcon: Autonomous GPU Kernel Generation via Deep Agents**](https://pytorch.org/blog/kernelfalcon-autonomous-gpu-kernel-generation-via-deep-agents/) <br> | PyTorch Blog | 2025.11 | [Github](https://github.com/meta-pytorch/KernelAgent) | Triton, Deep Agent, Multi-Agent, Verification |
 | [**CudaForge: An Agent Framework with Hardware Feedback for CUDA Kernel Optimization**](https://arxiv.org/abs/2511.01884) <br> | arXiv | 2025.11 | [Github](https://github.com/OptimAI-Lab/CudaForge) | CUDA, Agent, Iterative Search |
 | [**STARK: Strategic Team of Agents for Refining Kernels**](https://arxiv.org/abs/2510.16996) <br> | arXiv | 2025.10 | - | CUDA, Multi-Agent, Iterative Search |
+| [**TritonRL: Training LLMs to Think and Code Triton Without Cheating**](https://arxiv.org/abs/2510.17891) <br> | arXiv | 2025.10 | [OpenReview](https://openreview.net/forum?id=oaKd1fVgWc) | Triton, RL, Finetuning, Reward Hacking Prevention |
 | [**From Large to Small: Transferring CUDA Optimization Expertise via Reasoning Graph**](https://arxiv.org/abs/2510.19873) <br> | arXiv | 2025.10 | - | CUDA, RAG, Transfer Learning |
 | [**ConCuR: Conciseness Makes State-of-the-Art Kernel Generation**](https://arxiv.org/abs/2510.07356) <br> | arXiv | 2025.10 | - | CUDA, Finetuning |
 | [**Mastering Sparse CUDA Generation through Pretrained Models and Deep Reinforcement Learning**](https://openreview.net/forum?id=VdLEaGPYWT) <br> | ICLR 2026 | 2025.09 | - | CUDA, Sparse, RL, Finetuning |
@@ -13,7 +14,6 @@
 | [Astra: A Multi-Agent System for GPU Kernel Performance Optimization](https://arxiv.org/abs/2509.07506) | arXiv | 2025.09 | - | CUDA |
 | [SwizzlePerf: Hardware-Aware LLMs for GPU Kernel Performance Optimization](https://arxiv.org/abs/2508.20258) | arXiv | 2025.08 | - | AMD GPU |
 | [CudaLLM: Training Language Models to Generate High-Performance CUDA Kernels](https://huggingface.co/ByteDance-Seed/cudaLLM-8B) <br> | HugginFace | 2025.08 | [Github](https://github.com/ByteDance-Seed/cudaLLM) | CUDA, Finetuning |
-
 | ![Star](https://img.shields.io/github/stars/AMD-AIG-AIMA/GEAK-agent.svg?style=social&label=Star) <br> [**GEAK: Introducing Triton Kernel AI Agent & Evaluation Benchmarks**](https://arxiv.org/abs/2507.23194) <br> | arXiv | 2025.07 | [Github](https://github.com/AMD-AIG-AIMA/GEAK-agent) | Triton (AMD), Iterative Search |
 | [**AutoTriton: Automatic Triton Programming with Reinforcement Learning in LLMs**](https://arxiv.org/abs/2507.05687) <br> | arXiv | 2025.07 | [Github](https://github.com/AI9Stars/AutoTriton) | Triton, Finetuning, RL |
 | ![Star](https://img.shields.io/github/stars/deepreinforce-ai/CUDA-L1.svg?style=social&label=Star) <br> [**CUDA-L1: Improving CUDA Optimization via Contrastive Reinforcement Learning**](https://arxiv.org/abs/2507.14111) <br> | arXiv | 2025.07 | [Github](https://github.com/deepreinforce-ai/CUDA-L1) | CUDA, Finetuning |
