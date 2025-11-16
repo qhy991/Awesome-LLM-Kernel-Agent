@@ -44,7 +44,10 @@
 ## Traditional Kernel Optimization
 |  Title  |   Date   |   topic   |
 |:--------|:--------:|:--------:|
+| [**HipKittens: Fast and Furious AMD Kernels**](https://arxiv.org/abs/2511.08083) <br> | arXiv | 2025.11 | AMD GPU, HIP, Kernel Optimization, [Github](https://github.com/HazyResearch/HipKittens) |
+| [**TileLang: A Compiler for Tile-Based Accelerators**](https://arxiv.org/abs/2504.17577) <br> | arXiv | 2025.04 | DSL, Kernel Optimization, [Github](https://github.com/tile-ai/tilelang) |
 | [**Can Tensor Cores Benefit Memory-Bound Kernels? (No!)**](https://arxiv.org/abs/2502.16851) <br> | arXiv | 2025.02 | Tensor Core, Memory-Bound, Analysis |
+| [**ThunderKittens: A DSL for High-Performance Tensor Computations**](https://arxiv.org/abs/2410.20399) <br> | arXiv | 2024.10 | CUDA, Tensor Core, DSL, [Github](https://github.com/HazyResearch/ThunderKittens) |
 | [**How To Write A Fast Matrix Multiplication From Scratch With Tensor Cores**](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) <br> | Blog | 2024.08 | Tensor Core, Matrix Multiplication, Tutorial |
 | [**Tensor Kernels (TK)**](https://hazyresearch.stanford.edu/blog/2024-05-12-tk) <br> | Blog | 2024.05 | Tensor Core, Kernel Optimization |
 | [**CUDA Matrix Multiplication**](https://siboehm.com/articles/22/CUDA-MMM) <br> | Blog | 2022.06 | CUDA, Matrix Multiplication, Tutorial |
