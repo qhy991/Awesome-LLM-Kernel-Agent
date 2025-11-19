@@ -45,6 +45,7 @@
 |  Title  |   Date   |   topic   |
 |:--------|:--------:|:--------:|
 | [**HipKittens: Fast and Furious AMD Kernels**](https://arxiv.org/abs/2511.08083) <br> | arXiv | 2025.11 | AMD GPU, HIP, Kernel Optimization, [Github](https://github.com/HazyResearch/HipKittens) |
+| [**FlashMoBA: Optimizing Mixture of Block Attention**](https://arxiv.org/abs/2511.11571) <br> | arXiv | 2025.11 | CUDA, Attention, Sparse Attention, [Github](https://github.com/mit-han-lab/flash-moba) |
 | [**TileLang: A Compiler for Tile-Based Accelerators**](https://arxiv.org/abs/2504.17577) <br> | arXiv | 2025.04 | DSL, Kernel Optimization, [Github](https://github.com/tile-ai/tilelang) |
 | [**Can Tensor Cores Benefit Memory-Bound Kernels? (No!)**](https://arxiv.org/abs/2502.16851) <br> | arXiv | 2025.02 | Tensor Core, Memory-Bound, Analysis |
 | [**ThunderKittens: A DSL for High-Performance Tensor Computations**](https://arxiv.org/abs/2410.20399) <br> | arXiv | 2024.10 | CUDA, Tensor Core, DSL, [Github](https://github.com/HazyResearch/ThunderKittens) |
