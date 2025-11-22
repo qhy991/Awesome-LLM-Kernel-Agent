@@ -3,6 +3,7 @@
 ## Methods
 |  Title  |   Venue  |   Date   |   Code   |   topic   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
+| [**KForge: Program Synthesis for Diverse AI Hardware Accelerators**](https://arxiv.org/abs/2511.13274) <br> | arXiv | 2025.11 | - | CUDA + Metal, Multi-Agent, Cross-Platform |
 | [**KernelFalcon: Autonomous GPU Kernel Generation via Deep Agents**](https://pytorch.org/blog/kernelfalcon-autonomous-gpu-kernel-generation-via-deep-agents/) <br> | PyTorch Blog | 2025.11 | [Github](https://github.com/meta-pytorch/KernelAgent) | Triton, Deep Agent, Multi-Agent, Verification |
 | [**CudaForge: An Agent Framework with Hardware Feedback for CUDA Kernel Optimization**](https://arxiv.org/abs/2511.01884) <br> | arXiv | 2025.11 | [Github](https://github.com/OptimAI-Lab/CudaForge) | CUDA, Agent, Iterative Search |
 | [**STARK: Strategic Team of Agents for Refining Kernels**](https://arxiv.org/abs/2510.16996) <br> | arXiv | 2025.10 | - | CUDA, Multi-Agent, Iterative Search |
