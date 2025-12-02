@@ -120,6 +120,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 |  Title  |   Date   |   Topics & Resources   |
 |:--------|:--------:|:--------:|
 | [**CuTe — NVIDIA CUTLASS Documentation**](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/cute/index.html) | 2025-12 | `CUDA` `Layout` `Tensor` `Library` |
+| [**NineToothed: A DSL based on Triton**](https://github.com/InfiniTensor/ninetoothed) | 2025 | `Triton` `DSL` • [GitHub](https://github.com/InfiniTensor/ninetoothed) |
+| [**Helion: A Python-embedded DSL for ML Kernels**](https://github.com/pytorch/helion) | 2025 | `PyTorch` `DSL` • [GitHub](https://github.com/pytorch/helion) |
 | [**HipKittens: Fast and Furious AMD Kernels**](https://arxiv.org/abs/2511.08083) | 2025-11 | `AMD-GPU` `HIP` • [GitHub](https://github.com/HazyResearch/HipKittens) |
 | [**FlashMoBA: Optimizing Mixture of Block Attention**](https://arxiv.org/abs/2511.11571) | 2025-11 | `CUDA` `Attention` `Sparse` • [GitHub](https://github.com/mit-han-lab/flash-moba) |
 | [**TileLang: A Compiler for Tile-Based Accelerators**](https://arxiv.org/abs/2504.17577) | 2025-04 | `DSL` `Compiler` • [GitHub](https://github.com/tile-ai/tilelang) |
