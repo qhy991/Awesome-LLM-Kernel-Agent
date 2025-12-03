@@ -7,8 +7,8 @@
 ### *A Curated Collection of LLM-Driven GPU Kernel Generation & Optimization Research*
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-November%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-62+-green.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
+[![Papers](https://img.shields.io/badge/Papers-63+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
@@ -39,8 +39,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 62+
-- **Latest Addition**: November 2025
+- **Total Papers**: 63+
+- **Latest Addition**: December 2025
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
 
@@ -53,10 +53,11 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (28 papers)</b></summary>
+<summary><b>📋 View All Methods (29 papers)</b></summary>
 
 |  Title  |   Venue  |   Date   |   Code   |   Topics   |
 |:--------|:--------:|:--------:|:--------:|:--------:|
+| ![Star](https://img.shields.io/github/stars/deepreinforce-ai/CUDA-L2.svg?style=social&label=Star) [**CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning**](https://arxiv.org/abs/2512.02551) | arXiv | 2025-12 | [GitHub](https://github.com/deepreinforce-ai/CUDA-L2) | `CUDA` `RL` `HGEMM` `Matrix-Multiplication` |
 | [**QiMeng-Kernel: Macro-Thinking Micro-Coding Paradigm for LLM-Based High-Performance GPU Kernel Generation**](https://arxiv.org/abs/2511.20100) | arXiv | 2025-11 | - | `CUDA` `Triton` `RL` `Hierarchical` `MTMC` |
 | [**KernelBand: Boosting LLM-based Kernel Optimization with a Hierarchical and Hardware-aware Multi-armed Bandit**](https://arxiv.org/abs/2511.18868) | arXiv | 2025-11 | - | `Triton` `Multi-Armed-Bandit` `Hardware-Aware` `Agent` |
 | [**KForge: Program Synthesis for Diverse AI Hardware Accelerators**](https://arxiv.org/abs/2511.13274) | arXiv | 2025-11 | - | `CUDA` `Metal` `Multi-Agent` `Cross-Platform` |
@@ -198,6 +199,6 @@ This work is licensed under a [Creative Commons Zero v1.0 Universal](LICENSE) li
 
 Maintained with ❤️ by the community
 
-*Last Updated: November 2025*
+*Last Updated: December 2025*
 
 </div>
