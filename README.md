@@ -104,6 +104,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Affiliation   |   Platforms   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**GPUFLOPBench: Counting Without Running: Evaluating LLMs' Reasoning About Code Complexity**](https://arxiv.org/abs/2512.04355) | arXiv | 2025-12 | [GitHub](https://github.com/Scientific-Computing-Lab/gpuFLOPBench) | Gregory Bolet | Virginia Tech / Lawrence Livermore National Laboratory / Stanford University / Technion | `CUDA` `FLOP-Counting` `Benchmark` |
 | ![Star](https://img.shields.io/github/stars/wzzll123/MultiKernelBench.svg?style=social&label=Star) [**MultiKernelBench: A Multi-Platform Benchmark for Kernel Generation**](https://www.arxiv.org/abs/2507.17773) | arXiv | 2025-07 | [GitHub](https://github.com/wzzll123/MultiKernelBench) | Zhongzhen Wen | - | `CUDA` `CANN` `TPU` |
 | [**NPUEval: Optimizing NPU Kernels with LLMs and Open Source Compilers**](https://arxiv.org/abs/2507.14403) | arXiv | 2025-07 | - | Sarunas Kalade | - | `NPU` |
 | [**KernelBook: PyTorch to Triton Code Translation Dataset**](https://huggingface.co/datasets/GPUMODE/KernelBook) | HuggingFace | 2025-05 | [🤗 Dataset](https://huggingface.co/datasets/GPUMODE/KernelBook) | - | - | `Triton` `PyTorch` |
