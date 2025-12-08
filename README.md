@@ -105,6 +105,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Affiliation   |   Platforms   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
 | [**GPUFLOPBench: Counting Without Running: Evaluating LLMs' Reasoning About Code Complexity**](https://arxiv.org/abs/2512.04355) | arXiv | 2025-12 | [GitHub](https://github.com/Scientific-Computing-Lab/gpuFLOPBench) | Gregory Bolet | Virginia Tech / Lawrence Livermore National Laboratory / Stanford University / Technion | `CUDA` `FLOP-Counting` `Benchmark` |
+| ![Star](https://img.shields.io/github/stars/NVIDIA/compute-eval.svg?style=social&label=Star) [**ComputeEval: An Open Source Framework for Evaluating LLMs on CUDA**](https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/) | NVIDIA Blog | 2025-04 | [GitHub](https://github.com/NVIDIA/compute-eval) | Daniel Rodriguez, Navyaa Sanan | NVIDIA | `CUDA` `CCCL` `Benchmark` |
+| [**HeCBench: Heterogeneous Computing Benchmark Suite**](https://github.com/zjin-lcf/HeCBench) | GitHub | - | [GitHub](https://github.com/zjin-lcf/HeCBench) | - | - | `CUDA` `Heterogeneous-Computing` |
 | ![Star](https://img.shields.io/github/stars/wzzll123/MultiKernelBench.svg?style=social&label=Star) [**MultiKernelBench: A Multi-Platform Benchmark for Kernel Generation**](https://www.arxiv.org/abs/2507.17773) | arXiv | 2025-07 | [GitHub](https://github.com/wzzll123/MultiKernelBench) | Zhongzhen Wen | - | `CUDA` `CANN` `TPU` |
 | [**NPUEval: Optimizing NPU Kernels with LLMs and Open Source Compilers**](https://arxiv.org/abs/2507.14403) | arXiv | 2025-07 | - | Sarunas Kalade | - | `NPU` |
 | [**KernelBook: PyTorch to Triton Code Translation Dataset**](https://huggingface.co/datasets/GPUMODE/KernelBook) | HuggingFace | 2025-05 | [🤗 Dataset](https://huggingface.co/datasets/GPUMODE/KernelBook) | - | - | `Triton` `PyTorch` |
@@ -141,6 +143,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 |  Title  |   Date   |   Topics   |
 |:--------|:--------:|:--------:|
+| [**Benchmarking LLMs on AI-Generated CUDA Code with ComputeEval 2025.2**](https://developer.nvidia.com/blog/benchmarking-llms-on-ai-generated-cuda-code-with-computeeval-2025-2/) | 2025-11 | `NVIDIA` `ComputeEval` `CUDA` `Benchmark` |
+| [**Announcing ComputeEval, an Open Source Framework for Evaluating LLMs on CUDA**](https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/) | 2025-04 | `NVIDIA` `ComputeEval` `CUDA` `Framework` |
 | [**Automating GPU Kernel Generation with DeepSeek-R1 and Inference Time Scaling**](https://developer.nvidia.com/blog/automating-gpu-kernel-generation-with-deepseek-r1-and-inference-time-scaling/) | 2025 | `NVIDIA` `DeepSeek-R1` `CUDA` |
 
 ### 🏆 Competitions & Challenges
