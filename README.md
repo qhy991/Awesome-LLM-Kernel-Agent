@@ -53,10 +53,11 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (29 papers)</b></summary>
+<summary><b>📋 View All Methods (30 papers)</b></summary>
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Last Author   |   Affiliation   |   Topics   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**Agentic Operator Generation for ML ASICs**](https://arxiv.org/pdf/2512.10977) | arXiv | 2025-12 | - | Alec M. Hammond | Ajit Mathews | Meta, FAIR, Meta Superintelligence Lab | `Triton` `Agent` `ASIC` `MTIA` `Operator-Generation` |
 | [**tritonBLAS: Triton-based Analytical Approach for GEMM Kernel Parameter Selection**](https://arxiv.org/pdf/2512.04226) | arXiv | 2025-12 | - | Ryan Swann | Alex Underwood | Advanced Micro Devices, Inc. | `Triton` `GEMM` `Analytical-Model` `AMD-GPU` `Kernel-Optimization` |
 | ![Star](https://img.shields.io/github/stars/deepreinforce-ai/CUDA-L2.svg?style=social&label=Star) [**CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning**](https://arxiv.org/abs/2512.02551) | arXiv | 2025-12 | [GitHub](https://github.com/deepreinforce-ai/CUDA-L2) | Songqiao Su | Chris Shum | DeepReinforce Team | `CUDA` `RL` `HGEMM` `Matrix-Multiplication` |
 | [**QiMeng-Kernel: Macro-Thinking Micro-Coding Paradigm for LLM-Based High-Performance GPU Kernel Generation**](https://arxiv.org/abs/2511.20100) | arXiv | 2025-11 | - | Xinguo Zhu | Ling Li | Intelligent Software Research Center, Institute of Software, CAS; State Key Lab of Processors, Institute of Computing Technology, CAS; Hangzhou Institute for Advanced Study, UCAS | `CUDA` `Triton` `RL` `Hierarchical` `MTMC` |
@@ -93,6 +94,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Affiliation   |   Topics   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**Using GUI Agent for Electronic Design Automation**](https://arxiv.org/pdf/2512.11611) | arXiv | 2025-12 | [GitHub](https://github.com/aiben-ch/GUI-EDA) | Chunyi Li | Nanyang Technological University / Shanghai Jiao Tong University / Shanghai AI Laboratory | `GUI-Agent` `EDA` `CAD` `Multimodal` |
 | [**OS-R1: Agentic Operating System Kernel Tuning with Reinforcement Learning**](https://arxiv.org/abs/2508.12551) | arXiv | 2025-08 | - | Hongyu Lin | - | `OS-Kernel` `RL` `Agent` |
 | [**GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning**](https://arxiv.org/abs/2507.19457) | arXiv | 2025-07 | - | Lakshya A Agrawal | - | `Prompt-Engineering` `Reflective-Evolution` |
 | [**AlphaEvolve: A Coding Agent for Scientific and Algorithmic Discovery**](https://arxiv.org/abs/2506.13131) | arXiv | 2025-06 | - | Alexander Novikov | - | `Coding-Agent` `Scientific-Discovery` |
@@ -105,6 +107,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Affiliation   |   Platforms   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**GUI-EDA: A Large-Scale Dataset for GUI Agent in Electronic Design Automation**](https://arxiv.org/pdf/2512.11611) | arXiv | 2025-12 | [GitHub](https://github.com/aiben-ch/GUI-EDA) | Chunyi Li | Nanyang Technological University / Shanghai Jiao Tong University / Shanghai AI Laboratory | `GUI-Agent` `EDA` `CAD` `Dataset` |
 | [**GPUFLOPBench: Counting Without Running: Evaluating LLMs' Reasoning About Code Complexity**](https://arxiv.org/abs/2512.04355) | arXiv | 2025-12 | [GitHub](https://github.com/Scientific-Computing-Lab/gpuFLOPBench) | Gregory Bolet | Virginia Tech / Lawrence Livermore National Laboratory / Stanford University / Technion | `CUDA` `FLOP-Counting` `Benchmark` |
 | ![Star](https://img.shields.io/github/stars/NVIDIA/compute-eval.svg?style=social&label=Star) [**ComputeEval: An Open Source Framework for Evaluating LLMs on CUDA**](https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/) | NVIDIA Blog | 2025-04 | [GitHub](https://github.com/NVIDIA/compute-eval) | Daniel Rodriguez, Navyaa Sanan | NVIDIA | `CUDA` `CCCL` `Benchmark` |
 | [**HeCBench: Heterogeneous Computing Benchmark Suite**](https://github.com/zjin-lcf/HeCBench) | GitHub | - | [GitHub](https://github.com/zjin-lcf/HeCBench) | - | - | `CUDA` `Heterogeneous-Computing` |
