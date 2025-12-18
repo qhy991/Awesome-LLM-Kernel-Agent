@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-63+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-64+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
@@ -39,7 +39,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 63+
+- **Total Papers**: 64+
 - **Latest Addition**: December 2025
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -53,10 +53,11 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (31 papers)</b></summary>
+<summary><b>📋 View All Methods (32 papers)</b></summary>
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Last Author   |   Affiliation   |   Topics   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**Design in Tiles: Automating GEMM Deployment on Tile-Based Many-PE Accelerators**](https://arxiv.org/pdf/2512.13638) | arXiv | 2025-12 | - | Aofeng Shen | Luca Benini | ETH Zurich | `Tile-Based` `GEMM` `Automated-Deployment` `Many-PE` `Accelerator` |
 | [**Agentic Operator Generation for ML ASICs**](https://arxiv.org/pdf/2512.10977) | arXiv | 2025-12 | - | Alec M. Hammond | Ajit Mathews | Meta, FAIR, Meta Superintelligence Lab | `Triton` `Agent` `ASIC` `MTIA` `Operator-Generation` |
 | ![Star](https://img.shields.io/github/stars/RLsys-Foundation/TritonForge.svg?style=social&label=Star) [**TritonForge: Forging Optimal GPU Kernels through SFT + RL**](https://arxiv.org/pdf/2512.09196) | arXiv | 2025-12 | [GitHub](https://github.com/RLsys-Foundation/TritonForge) | Haonan Li | Zhiyun Qian | University of California, Riverside; Meta; University of California, Irvine | `Triton` `SFT` `RL` `Multi-Turn` `Cross-Platform` |
 | [**tritonBLAS: Triton-based Analytical Approach for GEMM Kernel Parameter Selection**](https://arxiv.org/pdf/2512.04226) | arXiv | 2025-12 | - | Ryan Swann | Alex Underwood | Advanced Micro Devices, Inc. | `Triton` `GEMM` `Analytical-Model` `AMD-GPU` `Kernel-Optimization` |
