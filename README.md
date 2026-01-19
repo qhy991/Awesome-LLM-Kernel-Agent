@@ -39,7 +39,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 67+
+- **Total Papers**: 68+
 - **Latest Addition**: December 2025
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -53,10 +53,11 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (35 papers)</b></summary>
+<summary><b>📋 View All Methods (36 papers)</b></summary>
 
 |  Title  |   Venue  |   Date   |   Code   |   First Author   |   Last Author   |   Affiliation   |   Topics   |
 |:--------|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|:--------:|
+| [**AscendKernelGen: A Systematic Study of LLM-Based Kernel Generation for Neural Processing Units**](https://arxiv.org/abs/2601.07160) | arXiv | 2026-01 | - | Xinzi Cao | Yonghong Tian | Pengcheng Laboratory, Huawei, Sun Yat-sen University, Peking University | `NPU` `Ascend` `LLM` `Kernel-Generation` `Domain-Adaptation` |
 | [**MaxCode: A Max-Reward Reinforcement Learning Framework for Automated Code Optimization**](https://arxiv.org/abs/2601.05475) | arXiv | 2026-01 | - | Jiefu Ou | George Karypis | Johns Hopkins University, Amazon Web Services | `CUDA` `RL` `Code-Optimization` `Inference-Time-Search` `Performance-Feedback` |
 | [**FlashInfer-Bench: Building the Virtuous Cycle for AI-driven LLM Systems**](https://arxiv.org/abs/2601.00227v1) | arXiv | 2026-01 | [GitHub](https://github.com/flashinfer-ai/flashinfer-bench) | Shanli Xing | Tianqi Chen | University of Washington, Carnegie Mellon University, NVIDIA, University of California, Berkeley | `CUDA` `Benchmarking` `Kernel-Generation` `LLM-Agents` `Performance-Evaluation` |
 | [**EvoEngineer: Mastering Automated CUDA Kernel Code Evolution with Large Language Models**](https://arxiv.org/pdf/2510.03760) | arXiv | 2025-10 | - | Ping Guo | Qingfu Zhang | - | `CUDA` `Kernel-Optimization` `LLM` `Code-Evolution` `Automation` |
