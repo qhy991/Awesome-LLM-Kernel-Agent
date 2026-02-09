@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-66+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-70+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
@@ -39,8 +39,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 69+
-- **Latest Addition**: December 2025
+- **Total Papers**: 70+
+- **Latest Addition**: February 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
 
@@ -53,10 +53,11 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (37 papers)</b></summary>
+<summary><b>📋 View All Methods (38 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**Dr. Kernel: Reinforcement Learning Done Right for Triton Kernel Generations**](https://arxiv.org/html/2602.05885v1)                                                                                                                  |     arXiv      | 2026-02 |                        [GitHub](https://github.com/hkust-nlp/KernelGYM)                        |       Wei Liu       |     Junxian He     |                                                                                                                                    HKUST, TikTok, CUHK(SZ), NTU                                                                                                                                    |                    `Triton` `RL` `Multi-Turn` `KernelGym` `Reward-Hacking`                    |
 | [**Towards Automated Kernel Generation in the Era of LLMs**](https://arxiv.org/abs/2601.15727)                                                                                                                                        |     arXiv      | 2026-01 |                                                     -                                                     |       Yang Yu       |    Yonghua Lin     |                                                                                          Beijing Academy of Artificial Intelligence, Beijing Normal University, Peking University, Beijing Institute of Technology, Cornell University, Beijing Jiaotong University, Renmin University of China                                                                                          |                    `Survey` `Kernel-Generation` `LLM` `Agentic-Systems`                    |
 | [**AscendKernelGen: A Systematic Study of LLM-Based Kernel Generation for Neural Processing Units**](https://arxiv.org/abs/2601.07160)                                                                                                    |     arXiv      | 2026-01 |                                                     -                                                     |      Xinzi Cao      |   Yonghong Tian    |                                                                                                       Pengcheng Laboratory, Huawei, Sun Yat-sen University, Peking University                                                                                                       |          `NPU` `Ascend` `LLM` `Kernel-Generation` `Domain-Adaptation`           |
 | [**MaxCode: A Max-Reward Reinforcement Learning Framework for Automated Code Optimization**](https://arxiv.org/abs/2601.05475)                                                                                                            |     arXiv      | 2026-01 |                                                     -                                                     |      Jiefu Ou       |   George Karypis   |                                                                                                                    Johns Hopkins University, Amazon Web Services                                                                                                                    | `CUDA` `RL` `Code-Optimization` `Inference-Time-Search` `Performance-Feedback`  |
