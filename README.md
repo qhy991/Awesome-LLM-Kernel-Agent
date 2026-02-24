@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-70+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-71+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
@@ -39,7 +39,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 70+
+- **Total Papers**: 71+
 - **Latest Addition**: February 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -116,6 +116,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 | Title                                                                                                                                                                                                                                                                                |    Venue    |  Date   |                                                          Code                                                           |          First Author          |                                        Affiliation                                        |             Platforms              |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**RooflineBench: A Benchmarking Framework for On-Device LLMs via Roofline Analysis**](https://arxiv.org/abs/2602.11506)                                                                                                                                                            |    arXiv    | 2026-02 |                                                            -                                                            |            Zhen Bi             | Huzhou University, Banbu AI Foundation, Institution of Automation, Chinese Academy of Sciences, Carnegie Mellon University, University of Edinburgh |     `Roofline` `Benchmark` `On-Device-LLM`     |
 | [**GUI-EDA: A Large-Scale Dataset for GUI Agent in Electronic Design Automation**](https://arxiv.org/pdf/2512.11611)                                                                                                                                                                 |    arXiv    | 2025-12 |                                      [GitHub](https://github.com/aiben-ch/GUI-EDA)                                      |           Chunyi Li            | Nanyang Technological University / Shanghai Jiao Tong University / Shanghai AI Laboratory | `GUI-Agent` `EDA` `CAD` `Dataset`  |
 | [**GPUFLOPBench: Counting Without Running: Evaluating LLMs' Reasoning About Code Complexity**](https://arxiv.org/abs/2512.04355)                                                                                                                                                     |    arXiv    | 2025-12 |                           [GitHub](https://github.com/Scientific-Computing-Lab/gpuFLOPBench)                            |         Gregory Bolet          |  Virginia Tech / Lawrence Livermore National Laboratory / Stanford University / Technion  | `CUDA` `FLOP-Counting` `Benchmark` |
 | ![Star](https://img.shields.io/github/stars/NVIDIA/compute-eval.svg?style=social&label=Star) [**ComputeEval: An Open Source Framework for Evaluating LLMs on CUDA**](https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/) | NVIDIA Blog | 2025-04 |                                    [GitHub](https://github.com/NVIDIA/compute-eval)                                     | Daniel Rodriguez, Navyaa Sanan |                                          NVIDIA                                           |     `CUDA` `CCCL` `Benchmark`      |
