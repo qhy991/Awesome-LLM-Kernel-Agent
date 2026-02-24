@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-71+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-72+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
@@ -39,7 +39,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 71+
+- **Total Papers**: 72+
 - **Latest Addition**: February 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -137,6 +137,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 | Title                                                                                                                                                                                                |  Date   |                                  Topics & Resources                                   |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :-----------------------------------------------------------------------------------: |
+| [**Fast and Fusiest: An Optimal Fusion-Aware Mapper for Accelerator Modeling and Evaluation**](https://arxiv.org/abs/2602.15166)                                                                  | 2026-02 |                    `Accelerator-Modeling` `Fusion` `Mapper` `Optimization`                    |
 | [**CuTe — NVIDIA CUTLASS Documentation**](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/cute/index.html)                                                                                     | 2025-12 |                          `CUDA` `Layout` `Tensor` `Library`                           |
 | [**NineToothed: A DSL based on Triton**](https://github.com/InfiniTensor/ninetoothed)                                                                                                                |  2025   |        `Triton` `DSL` • [GitHub](https://github.com/InfiniTensor/ninetoothed)         |
 | [**Helion: A Python-embedded DSL for ML Kernels**](https://github.com/pytorch/helion)                                                                                                                |  2025   |             `PyTorch` `DSL` • [GitHub](https://github.com/pytorch/helion)             |
