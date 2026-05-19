@@ -7,11 +7,11 @@
 ### _A Curated Collection of LLM-Driven GPU Kernel Generation & Optimization Research_
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-December%202025-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-78+-green.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
+[![Papers](https://img.shields.io/badge/Papers-84+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
+[📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🧰 Tools](#-open-source-tools--frameworks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
 
 </div>
 
@@ -39,8 +39,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 78+
-- **Latest Addition**: March 2026
+- **Total Papers**: 84+
+- **Latest Addition**: April 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
 
@@ -53,10 +53,15 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (47 papers)</b></summary>
+<summary><b>📋 View All Methods (52 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |
+| [**FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow**](https://arxiv.org/abs/2604.26666)                                                                                                                  |     arXiv      | 2026-04 |                                                     -                                                     |    Sina Heidari     | Dimitrios S. Nikolopoulos |                                                                                                                          Virginia Tech, Blacksburg, Virginia, USA                                                                                                                           |              `CUTLASS` `Agent` `Auto-Tuning` `Multi-Pattern` `KernelBench`              |
+| [**ARGUS: Agentic GPU Optimization Guided by Data-Flow Invariants**](https://arxiv.org/abs/2604.18616)                                                                                                                          |     arXiv      | 2026-04 |                                                     -                                                     |     Haohui Mai      |    Binhang Yuan    |                                                                 CausalFlow Inc.; HKUST; Tsinghua University; Stanford University; UCAS; UC Riverside                                                                 |           `CUDA` `Agent` `Data-Flow` `GEMM` `Attention` `MoE` `AMD`            |
+| ![Star](https://img.shields.io/github/stars/StigLidu/AdaExplore.svg?style=social&label=Star) [**AdaExplore: Failure-Driven Adaptation and Diversity-Preserving Search for Efficient Kernel Generation**](https://arxiv.org/abs/2604.16625) |     arXiv      | 2026-04 |                           [GitHub](https://github.com/StigLidu/AdaExplore)                           |     Weihua Du       |    Sean Welleck    |                                                                 Carnegie Mellon University; University of Washington; Arm Ltd.                                                                 |        `Triton` `Agent` `Failure-Driven` `Diversity-Preserving-Search` `KernelBench`        |
+| ![Star](https://img.shields.io/github/stars/0satan0/KernelMem.svg?style=social&label=Star) [**KernelSkill: A Multi-Agent Framework for GPU Kernel Optimization**](https://arxiv.org/abs/2603.10085)                             |     arXiv      | 2026-03 |                           [GitHub](https://github.com/0satan0/KernelMem)                            |     Qitong Sun      |     Tianlin Li     |                                                                 School of Computer Science and Engineering, Beihang University, China; Zhejiang Lab, China; Nanyang Technological University, Singapore                                                                 |           `CUDA` `Multi-Agent` `Memory` `KernelBench` `Expert-Skills`            |
 | [**InCoder-32B: Code Foundation Model for Industrial Scenarios**](https://arxiv.org/abs/2603.16790)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Jian Yang      |    Weifeng Lv      |                                                                                                                                    Beihang University, iQuest Research, Shanghai Jiao Tong University, ELLIS, University of Manchester, Shanghai Artificial Intelligence Laboratory, Sichuan University, Gaoling School of Artificial Intelligence, Renmin University of China, Langboat                                                                                                                                    |                    `Code-LLM` `Industrial-Scenarios` `Kernel-Optimization` `Foundation-Model`                    |
 | [**KernelCraft: Benchmarking for Agentic Close-to-Metal Kernel Generation on Emerging Hardware**](https://arxiv.org/abs/2603.08721)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Jiayi Nie      |    Yiren Zhao      |                                                                                                                                    University of Cambridge, Imperial College London, AMD, University of Edinburgh                                                                                                                                    |                    `Benchmark` `Agent` `Kernel-Generation` `Emerging-Hardware`                    |
 | [**StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning**](https://arxiv.org/abs/2603.02637)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Shiyang Li      |    Caiwen Ding      |                                                                                                                                    Department of Computer Science & Engineering, University of Minnesota-Twin Cities, Minnesota, USA; Department of Electrical Engineering, University of Minnesota-Twin Cities, Minnesota, USA                                                                                                                                    |                    `CUDA` `Multi-Agent` `End-to-End` `RL` `KernelBench`                    |
@@ -148,6 +153,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 | Title                                                                                                                                                                                                |  Date   |                                  Topics & Resources                                   |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :-----------------------------------------------------------------------------------: |
+| [**Evaluating CUDA Tile for AI Workloads on Hopper and Blackwell GPUs**](https://arxiv.org/abs/2604.23466)                                                                                          | 2026-04 | `First Author: Divakar Kumar Yadav` `Corresponding Author: Deepak Kumar` `University of Wisconsin-Milwaukee` `Illinois Institute of Technology` |
 | [**Execution-Centric Characterization of FP8 Matrix Cores, Asynchronous Execution, and Structured Sparsity on AMD MI300A**](https://arxiv.org/abs/2602.10262)                                      | 2026-02 |                    `AMD-GPU` `MI300A` `FP8` `Asynchronous-Execution` `Structured-Sparsity`                    |
 | [**Fast and Fusiest: An Optimal Fusion-Aware Mapper for Accelerator Modeling and Evaluation**](https://arxiv.org/abs/2602.15166)                                                                  | 2026-02 |                    `Accelerator-Modeling` `Fusion` `Mapper` `Optimization`                    |
 | [**CuTe — NVIDIA CUTLASS Documentation**](https://docs.nvidia.com/cutlass/latest/media/docs/cpp/cute/index.html)                                                                                     | 2025-12 |                          `CUDA` `Layout` `Tensor` `Library`                           |
@@ -165,6 +171,18 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 ---
 
 ## 🌟 Community & Resources
+
+### 🧰 Open-Source Tools & Frameworks
+
+> Agentic kernel optimization systems and hands-on CUDA engineering resources.
+
+| Title                                                                                                                                 |  Date   | Code | Topics |
+| :------------------------------------------------------------------------------------------------------------------------------------ | :-----: | :--: | :----: |
+| ![Star](https://img.shields.io/github/stars/TongmingLAIC/AKO4ALL.svg?style=social&label=Star) [**AKO4ALL: Agentic Kernel Optimization for All**](https://github.com/TongmingLAIC/AKO4ALL) | 2026-03 | [GitHub](https://github.com/TongmingLAIC/AKO4ALL) | `Agent` `CUDA` `Triton` `NCU` `Iterative-Optimization` `KernelBench` |
+| ![Star](https://img.shields.io/github/stars/0satan0/KernelMem.svg?style=social&label=Star) [**KernelMem: Automatic CUDA Kernel Generation and Optimization with Memory**](https://github.com/0satan0/KernelMem) |    -    | [GitHub](https://github.com/0satan0/KernelMem) | `CUDA` `Multi-Agent` `Memory` `NCU` `NSYS` `KernelBench` |
+| [**vitamin-cuda: Hands-on CUDA Learning Path with PyTorch Extensions**](https://github.com/WingEdge777/vitamin-cuda)                  |    -    | [GitHub](https://github.com/WingEdge777/vitamin-cuda) | `CUDA` `Tutorial` `PyTorch` `Learning` |
+
+---
 
 ### 📰 Industry Blogs & News
 
@@ -231,6 +249,6 @@ This work is licensed under a [Creative Commons Zero v1.0 Universal](LICENSE) li
 
 Maintained with ❤️ by the community
 
-_Last Updated: December 2025_
+_Last Updated: May 2026_
 
 </div>
