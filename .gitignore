@@ -1,7 +1,5 @@
 .DS_Store
 *.DS_Store
 
-
-
-
-
+# Python venv inside landscape toolkit
+llm_kernel_agent_landscape/.venv/

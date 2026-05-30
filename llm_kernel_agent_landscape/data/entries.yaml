@@ -1,0 +1,1218 @@
+# Canonical data file for the LLM-driven Kernel Engineering Landscape.
+# Run: make all
+#
+# Optional fields: affiliation, url, notes, highlight, y_offset, x_offset,
+#   timeline_date, timeline_label
+#   affiliation_short: shown on figure (keep <= 24 chars)
+#   show_in_report: compact slide figure (~5-6 per column)
+#   show_in_full: complete landscape figure
+# Curated timeline: data/timeline.yaml | Full timeline dates: data/timeline_dates.yaml
+
+- id: autotrion
+  name: AutoTriton
+  year: 2024
+  period: '2024'
+  category: LLM4Kernel
+  subcategory: SFT + RL / Triton
+  backends:
+  - Triton
+  method_tags:
+  - sft
+  - triton
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: Tsinghua · OpenBMB
+  display_priority: 2
+  show_in_report: true
+  show_in_full: true
+- id: qimen_kernel
+  name: QiMeng-Kernel
+  year: 2024
+  period: '2024'
+  category: LLM4Kernel
+  subcategory: Hierarchical kernel model
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - kernel-generation
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: CAS · ICT
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: cuda_l1
+  name: CUDA-L1
+  year: 2025
+  period: 2025 H1
+  category: LLM4Kernel
+  subcategory: Contrastive RL
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  - cuda
+  source: awesome_llm_kernel_agent
+  affiliation_short: DeepReinforce
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: cuda_l2
+  name: CUDA-L2
+  year: 2025
+  period: 2025 H1
+  category: LLM4Kernel
+  subcategory: RL for HGEMM
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  - cuda
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: DeepReinforce
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: tritonrl
+  name: TritonRL
+  year: 2025
+  period: 2025 H1
+  category: LLM4Kernel
+  subcategory: RL for Triton
+  backends:
+  - Triton
+  method_tags:
+  - rl
+  - triton
+  source: awesome_llm_kernel_agent
+  affiliation_short: CMU · AWS
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: cudallm
+  name: CudaLLM
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: CUDA fine-tuning
+  backends:
+  - CUDA
+  method_tags:
+  - sft
+  source: awesome_llm_kernel_agent
+  affiliation_short: ByteDance Seed
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: kevin
+  name: Kevin
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: Multi-turn RL
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: Autonomous
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+- id: tritonforge
+  name: TritonForge
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: SFT + RL
+  backends:
+  - Triton
+  method_tags:
+  - sft
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: UCR · Meta · UCI
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+- id: concur
+  name: ConCuR
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: Concise fine-tuning
+  backends:
+  - CUDA
+  method_tags:
+  - sft
+  source: awesome_llm_kernel_agent
+  affiliation_short: HKUST · ZJU
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: sparse_cuda
+  name: Sparse CUDA
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: Sparse + RL
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  - sparse
+  source: awesome_llm_kernel_agent
+  affiliation_short: Autonomous
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: transfer_cuda
+  name: Transfer CUDA
+  year: 2025
+  period: 2025 H2
+  category: LLM4Kernel
+  subcategory: RAG transfer
+  backends:
+  - CUDA
+  method_tags:
+  - rag
+  source: awesome_llm_kernel_agent
+  affiliation_short: ICT · CAS
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: cuda_agent
+  name: CUDA Agent
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Large-scale agentic RL
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  - agentic
+  source: awesome_llm_kernel_agent
+  affiliation_short: ByteDance · Tsinghua
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: dr_kernel
+  name: Dr. Kernel
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Triton RL
+  backends:
+  - Triton
+  method_tags:
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: HKUST · TikTok
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: maxcode
+  name: MaxCode
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Max-reward RL
+  backends:
+  - CUDA
+  method_tags:
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: JHU · AWS
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: ascend_kernelgen
+  name: AscendKernelGen
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: NPU adaptation
+  backends:
+  - NPU
+  method_tags:
+  - npu
+  source: awesome_llm_kernel_agent
+  affiliation_short: Pengcheng · Huawei
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: kernelllm
+  name: KernelLLM
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Kernel-specialized LLM
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - sft
+  source: awesome_llm_kernel_agent
+  affiliation_short: Meta
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: incoder32b
+  name: InCoder-32B
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Industrial code LLM
+  backends:
+  - CUDA
+  method_tags:
+  - foundation
+  source: awesome_llm_kernel_agent
+  affiliation_short: Beihang · SJTU
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: cuda_llm
+  name: CUDA-LLM
+  year: 2024
+  period: '2024'
+  category: Agent4Kernel
+  subcategory: Prompt + execution feedback
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: SJTU
+  display_priority: 2
+  show_in_report: true
+  show_in_full: true
+- id: ai_cuda_engineer
+  name: AI CUDA Engineer
+  year: 2025
+  period: 2025 H1
+  category: Agent4Kernel
+  subcategory: Iterative discovery
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Sakana AI
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: astra
+  name: Astra
+  year: 2025
+  period: 2025 H1
+  category: Agent4Kernel
+  subcategory: Multi-agent workflow
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - agent
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: Stanford · SJTU
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: geak
+  name: GEAK
+  year: 2025
+  period: 2025 H1
+  category: Agent4Kernel
+  subcategory: Triton agent + bench
+  backends:
+  - Triton
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: AMD
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: cudaforge
+  name: CudaForge
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Hardware feedback
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: U Minnesota
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: stark
+  name: STARK
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Multi-agent team
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Meta · Duke
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: evoengineer
+  name: EvoEngineer
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Code evolution
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - evolution
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: —
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: accelopt
+  name: AccelOpt
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Self-improving agent
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford · AWS
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: robust_kbench
+  name: Robust-KBench
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Agentic verification
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Sakana AI
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: fact
+  name: FACT
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: 3-stage agentic
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Virginia Tech
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+- id: argus
+  name: ARGUS
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Data-flow invariants
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: HKUST · Stanford
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+- id: adaexplore
+  name: AdaExplore
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Failure-driven search
+  backends:
+  - Triton
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: CMU · UW · Arm
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+- id: kernelskill
+  name: KernelSkill
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Multi-agent + memory
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Beihang · NTU
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+- id: stitchcuda
+  name: StitchCUDA
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Multi-agent + RL
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: U Minnesota
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: cuco
+  name: CUCo
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Compute-comm co-design
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: UT Austin
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: k_search
+  name: K-Search
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Co-evolving world model
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - search
+  source: awesome_llm_kernel_agent
+  affiliation_short: UC Berkeley
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: keet
+  name: KEET
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Profiling explanation
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: UMD · NVIDIA
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: kernelband
+  name: KernelBand
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Hardware-aware MAB
+  backends:
+  - Triton
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: PKU · ECNU
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: gpu_kernel_scientist
+  name: GPU Kernel Scientist
+  year: 2025
+  period: 2025 H1
+  category: Agent4Kernel
+  subcategory: Iterative optimization
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Autonomous
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: swizzleperf
+  name: SwizzlePerf
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Hardware-aware LLM
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Harvard · AMD
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: stack_v2_hpc
+  name: Stack v2 HPC
+  year: 2024
+  period: '2024'
+  category: Datasets
+  subcategory: Code corpus
+  backends:
+  - HPC
+  - CUDA
+  method_tags:
+  - dataset
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: BigCode
+  display_priority: 2
+  show_in_report: true
+  show_in_full: true
+- id: flaggems
+  name: FlagGems
+  year: 2024
+  period: '2024'
+  category: Datasets
+  subcategory: Triton kernel library
+  backends:
+  - Triton
+  method_tags:
+  - dataset
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: FlagOS
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: flashinfer
+  name: FlashInfer
+  year: 2025
+  period: 2025 H1
+  category: Datasets
+  subcategory: Inference kernels
+  backends:
+  - CUDA
+  method_tags:
+  - dataset
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: UW · CMU
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: kernelbook
+  name: KernelBook
+  year: 2025
+  period: 2025 H1
+  category: Datasets
+  subcategory: PyTorch→Triton pairs
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - dataset
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: GPUMODE
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: kb_samples
+  name: KB-samples
+  year: 2025
+  period: 2025 H2
+  category: Datasets
+  subcategory: Benchmark samples
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - dataset
+  source: awesome_llm_kernel_agent
+  affiliation_short: Sakana
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: ai_cuda_archive
+  name: AI-CUDA Archive
+  year: 2025
+  period: 2025 H1
+  category: Datasets
+  subcategory: Engineer trajectories
+  backends:
+  - CUDA
+  method_tags:
+  - dataset
+  source: awesome_llm_kernel_agent
+  affiliation_short: Sakana AI
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: liger_kernel
+  name: Liger-Kernel
+  year: 2026
+  period: 2026+
+  category: Datasets
+  subcategory: Kernel library
+  backends:
+  - Triton
+  - CUDA
+  method_tags:
+  - dataset
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: LinkedIn
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: pareval
+  name: ParEval
+  year: 2024
+  period: '2024'
+  category: Benchmarks
+  subcategory: Parallel code eval
+  backends:
+  - HPC
+  method_tags:
+  - benchmark
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: —
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: kernelbench
+  name: KernelBench
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: Correctness + speedup
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: tritonbench
+  name: TritonBench
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: Triton operators
+  backends:
+  - Triton
+  method_tags:
+  - benchmark
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: THU NLP
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: multikernelbench
+  name: MultiKernelBench
+  year: 2025
+  period: 2025 H2
+  category: Benchmarks
+  subcategory: Multi-backend
+  backends:
+  - CUDA
+  - CANN
+  - TPU
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: backendbench
+  name: BackendBench
+  year: 2025
+  period: 2025 H2
+  category: Benchmarks
+  subcategory: Backend generalization
+  backends:
+  - CUDA
+  - HIP
+  - Metal
+  method_tags:
+  - benchmark
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: —
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: equibench
+  name: EquiBench
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: Equivalence checking
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: computeeval
+  name: ComputeEval
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: CUDA LLM eval
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: NVIDIA
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: gpuflopbench
+  name: GPUFLOPBench
+  year: 2025
+  period: 2025 H2
+  category: Benchmarks
+  subcategory: FLOP reasoning
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: VT · LLNL
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: hecbench
+  name: HeCBench
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: Heterogeneous suite
+  backends:
+  - CUDA
+  - HIP
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: npueval
+  name: NPUEval
+  year: 2025
+  period: 2025 H1
+  category: Benchmarks
+  subcategory: NPU kernel eval
+  backends:
+  - NPU
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 4
+  show_in_report: false
+  show_in_full: true
+- id: cudabench
+  name: CUDABench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Text-to-CUDA
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: SJTU
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: sol_execbench
+  name: SOL-ExecBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Speed-of-light
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: NVIDIA
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+- id: flashinfer_bench
+  name: FlashInfer-Bench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Inference virtuous cycle
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_driven_kernel_generation
+  affiliation_short: UW · CMU · NVIDIA
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: kernelcraft
+  name: KernelCraft
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Emerging hardware
+  backends:
+  - CUDA
+  - HIP
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Cambridge · AMD
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: rooflinebench
+  name: RooflineBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Roofline analysis
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: CASIA · CMU
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+- id: autokernel
+  name: AutoKernel
+  year: 2024
+  period: '2024'
+  category: Systems / Platforms
+  subcategory: Kernel automation
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: kforge
+  name: KForge
+  year: 2025
+  period: 2025 H1
+  category: Systems / Platforms
+  subcategory: Cross-platform synthesis
+  backends:
+  - CUDA
+  - Metal
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford · Gimlet
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: kernelevolve
+  name: KernelEvolve
+  year: 2025
+  period: 2025 H2
+  category: Systems / Platforms
+  subcategory: Evolutionary system
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 1
+  show_in_report: true
+  show_in_full: true
+- id: kernelfalcon
+  name: KernelFalcon
+  year: 2025
+  period: 2025 H2
+  category: Systems / Platforms
+  subcategory: Deep agents
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: Meta PyTorch
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+- id: kernelmem
+  name: KernelMem
+  year: 2026
+  period: 2026+
+  category: Systems / Platforms
+  subcategory: Memory + multi-agent
+  backends:
+  - CUDA
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: Beihang
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: ako4all
+  name: AKO4ALL
+  year: 2026
+  period: 2026+
+  category: Systems / Platforms
+  subcategory: Agentic optimization
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - system
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+- id: fastkernels
+  name: FastKernels
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Production inference alignment
+  backends:
+  - CUDA
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Snowflake · CMU · UCSD
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+  notes: Benchmark from sandbox kernels to production inference frameworks.
+- id: kernelbenchx
+  name: KernelBenchX
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Failure analysis
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Tsinghua
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+  notes: Fine-grained diagnosis of why LLM-generated kernels fail.
+- id: xe_forge
+  name: Xe-Forge
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Intel GPU multi-stage
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Intel
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  notes: Multi-stage LLM kernel optimization for Intel GPU.
+- id: kernelfoundry
+  name: KernelFoundry
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Hardware-aware evolution
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - evolution
+  source: awesome_llm_kernel_agent
+  affiliation_short: Intel
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  notes: Hardware-aware evolutionary search with SYCL/CUDA cross-platform support.
+- id: drtriton
+  name: DRTriton
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Synthetic-data RL
+  backends:
+  - Triton
+  method_tags:
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: Texas A&M · Oracle
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  notes: Large-scale synthetic-data RL for Triton kernel generation.
+- id: optiml
+  name: OptiML
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Two-stage synthesis
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: Iowa State · USC · Cisco
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+  notes: NL-to-kernel synthesis and kernel refinement as two explicit stages.
+- id: cupilot
+  name: cuPilot
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Strategy-coordinated evolution
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: SEU · Tsinghua
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+  notes: Strategy-coordinated multi-agent CUDA kernel evolution.
+- id: minimal_exec_kernel
+  name: MinExec Kernel
+  year: 2025
+  period: 2025 H2
+  category: Agent4Kernel
+  subcategory: Hotspot extraction
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: XJTU
+  display_priority: 3
+  show_in_report: false
+  show_in_full: true
+  notes: Hotspot kernel extraction and reinsertion via minimal executable programs.
+- id: model2kernel
+  name: Model2Kernel
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Symbolic execution safety
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - verification
+  source: awesome_llm_kernel_agent
+  affiliation_short: —
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+  notes: Model-aware symbolic execution for safe CUDA kernel verification.
+- id: ascendcraft
+  name: AscendCraft
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: DSL-guided transcompilation
+  backends:
+  - NPU
+  method_tags:
+  - npu
+  - agent
+  source: awesome_llm_kernel_agent
+  affiliation_short: NJU · Huawei
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-01"
+  notes: DSL-guided LLM transcompilation for AscendC NPU kernel generation.
+- id: kernel_contracts
+  name: Kernel Contracts
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Correctness specification
+  backends:
+  - CUDA
+  - NPU
+  method_tags:
+  - verification
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: Ashiba Research
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-04"
+  notes: Specification language for ML kernel correctness across heterogeneous silicon.
+- id: kernelowl
+  name: KernelOwl
+  year: 2026
+  period: 2026+
+  category: Systems / Platforms
+  subcategory: Self-evolving platform
+  backends:
+  - CUDA
+  - HIP
+  - Metal
+  - Ascend
+  method_tags:
+  - system
+  source: self
+  affiliation_short: Self
+  display_priority: 0
+  show_in_report: true
+  show_in_full: true
+  highlight: true

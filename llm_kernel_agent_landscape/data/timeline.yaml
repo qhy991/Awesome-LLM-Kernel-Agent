@@ -1,0 +1,77 @@
+# Curated report timeline — edit buckets here for the compact README view.
+# Items can reference entries.yaml via `id`, or use free-form `label` for
+# papers not yet in entries.yaml.
+#
+# After editing:  make sync-readme
+
+title: "LLM Kernel Agent 方向与仓库覆盖时间线"
+
+buckets:
+  - date: "2023-09"
+    items:
+      - label: "Comparing Llama-2 and GPT-3 LLMs for HPC kernels generation"
+
+  - date: "2025-02"
+    items:
+      - id: kernelbench
+      - id: tritonbench
+      - label: "Adaptive Self-improvement LLM Agentic System for ML Library Development"
+
+  - date: "2025-06"
+    items:
+      - id: cuda_llm
+      - id: gpu_kernel_scientist
+      - id: kevin
+
+  - date: "2025-07"
+    items:
+      - id: autotrion
+      - id: cuda_l1
+      - id: geak
+      - id: multikernelbench
+
+  - date: "2025-09"
+    items:
+      - id: sparse_cuda
+      - id: astra
+      - id: robust_kbench
+
+  - date: "2025-11"
+    items:
+      - id: cudaforge
+      - id: accelopt
+      - id: kforge
+
+  - date: "2025-12"
+    items:
+      - id: cupilot
+      - id: minimal_exec_kernel
+      - id: cuda_l2
+
+  - date: "2026-01"
+    items:
+      - id: ascend_kernelgen
+      - id: ascendcraft
+
+  - date: "2026-02"
+    items:
+      - id: dr_kernel
+      - id: optiml
+
+  - date: "2026-03"
+    items:
+      - id: kernelfoundry
+      - id: drtriton
+      - id: cudabench
+      - id: model2kernel
+
+  - date: "2026-04"
+    items:
+      - id: keet
+      - id: kernel_contracts
+      - id: xe_forge
+
+  - date: "2026-05"
+    items:
+      - id: kernelbenchx
+      - id: fastkernels

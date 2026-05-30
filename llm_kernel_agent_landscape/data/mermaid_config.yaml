@@ -1,0 +1,31 @@
+# Mermaid rendering & README sync configuration
+
+readme_path: ../README.md
+
+markers:
+  report_timeline:
+    begin: "<!-- LANDSCAPE-TIMELINE-REPORT:BEGIN -->"
+    end: "<!-- LANDSCAPE-TIMELINE-REPORT:END -->"
+  full_timeline:
+    begin: "<!-- LANDSCAPE-TIMELINE-FULL:BEGIN -->"
+    end: "<!-- LANDSCAPE-TIMELINE-FULL:END -->"
+  category_map:
+    begin: "<!-- LANDSCAPE-CATEGORY-MAP:BEGIN -->"
+    end: "<!-- LANDSCAPE-CATEGORY-MAP:END -->"
+
+timelines:
+  report:
+    title: "LLM Kernel Agent 方向与仓库覆盖时间线（精选）"
+    source: data/timeline.yaml
+  full:
+    title: "LLM Kernel Agent 完整时间线（全部 curated entries）"
+    include_external: true
+
+category_map:
+  title: "LLM Kernel Agent 分类全景"
+  include_categories:
+    - LLM4Kernel
+    - Agent4Kernel
+    - Datasets
+    - Benchmarks
+    - Systems / Platforms

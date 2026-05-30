@@ -1,0 +1,10 @@
+# Upstream sources used when manually curating entries.yaml.
+sources:
+  - id: awesome_llm_kernel_agent
+    name: qhy991/Awesome-LLM-Kernel-Agent
+    url: https://github.com/qhy991/Awesome-LLM-Kernel-Agent
+    notes: "Broad awesome list for LLM kernel agents and related papers."
+  - id: awesome_llm_driven_kernel_generation
+    name: flagos-ai/awesome-LLM-driven-kernel-generation
+    url: https://github.com/flagos-ai/awesome-LLM-driven-kernel-generation
+    notes: "Landscape-style list organized by LLM4Kernel, Agent4Kernel, Datasets and Benchmarks."

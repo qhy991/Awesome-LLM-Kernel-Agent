@@ -1,0 +1,15 @@
+- date: 2026-05-24
+  version: v0.1.0
+  summary: "Initial landscape scaffold with representative works and KernelOwl positioning."
+- date: 2026-05-24
+  version: v0.2.0
+  summary: "Expanded to 66 curated entries with affiliation_short; enhanced SVG renderer with backend pills, column bands, and report/full split (31 vs 66 nodes)."
+- date: 2026-05-30
+  version: v0.3.0
+  summary: "Added 9 papers (FastKernels, KernelBenchX, Xe-Forge, KernelFoundry, DRTriton, OptiML, cuPilot, MinExec Kernel, Model2Kernel); landscape expanded to 75 entries."
+- date: 2026-05-30
+  version: v0.4.0
+  summary: "Mermaid-first landscape: timeline.yaml + timeline_dates.yaml + render_mermaid/sync_readme pipeline; README auto-sync with report/full/category views."
+- date: 2026-05-30
+  version: v0.4.1
+  summary: "Added AscendCraft and Kernel Contracts; moved CI to .github/workflows/render-landscape.yml; fixed .gitignore for landscape tracking."
