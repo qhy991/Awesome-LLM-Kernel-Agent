@@ -7,9 +7,9 @@
 ### _A Curated Collection of LLM-Driven GPU Kernel Generation & Optimization Research_
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
 [![Papers](https://img.shields.io/badge/Papers-95+-green.svg)](#)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-contributing)
 
 [📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🗺️ Landscape](#-landscape-map) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🧰 Tools](#-open-source-tools--frameworks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
 
@@ -510,7 +510,7 @@ If you find this repository useful for your research, please consider citing:
   title = {Awesome LLM Kernel Agent: A Curated Collection of LLM-Driven GPU Kernel Generation Research},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/qhy991/Awsome-LLM-Kernel-Agent}
+  url = {https://github.com/qhy991/Awesome-LLM-Kernel-Agent}
 }
 ```
 
