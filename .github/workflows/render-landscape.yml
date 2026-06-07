@@ -24,11 +24,12 @@ jobs:
       - name: Validate and sync Mermaid to README
         run: make all
         working-directory: llm_kernel_agent_landscape
-      - name: Check README is in sync
-        run: git diff --exit-code README.md
+      - name: Check READMEs are in sync
+        run: git diff --exit-code README.md README.zh-CN.md
       - uses: actions/upload-artifact@v4
         with:
           name: landscape-mermaid
           path: |
             llm_kernel_agent_landscape/figures/*.mmd
             README.md
+            README.zh-CN.md

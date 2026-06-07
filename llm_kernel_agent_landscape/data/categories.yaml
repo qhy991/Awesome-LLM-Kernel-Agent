@@ -6,26 +6,31 @@ categories:
     soft_fill: "#EAF3FF"
     x: 290
     title_en: "Model / Post-training"
+    title_zh: "模型 / 后训练"
   Agent4Kernel:
     color: "#D84040"
     soft_fill: "#FFF0F0"
     x: 620
     title_en: "Agentic Workflow"
+    title_zh: "智能体工作流"
   Datasets:
     color: "#F5A623"
     soft_fill: "#FFF7E7"
     x: 950
     title_en: "Data Assets"
+    title_zh: "数据资产"
   Benchmarks:
     color: "#6A1B9A"
     soft_fill: "#F4ECFF"
     x: 1280
     title_en: "Evaluation"
+    title_zh: "评测基准"
   Systems / Platforms:
     color: "#008B8B"
     soft_fill: "#EAFBFA"
     x: 1610
     title_en: "Integrated Systems"
+    title_zh: "集成系统"
 
 periods:
   "2026+":

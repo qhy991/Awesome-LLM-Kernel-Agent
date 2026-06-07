@@ -1,0 +1,115 @@
+# Locale strings for README landscape sections and README.zh-CN.md generation.
+# Paper tables stay in English (titles are canonical); narrative text is translated.
+
+en:
+  lang_link: "[中文 README](README.zh-CN.md)"
+  landscape_intro: >-
+    GitHub **natively renders Mermaid** in README files. The landscape is maintained in
+    [`llm_kernel_agent_landscape/`](llm_kernel_agent_landscape/): **edit YAML → generate Mermaid → sync to README**.
+  landscape_cmd_comment: "validate + render + sync README"
+  curated_timeline: "### Curated Timeline"
+  full_timeline_summary: "<b>Full timeline (all curated entries + pending items)</b>"
+  category_map_summary: "<b>Category map (5-column flowchart)</b>"
+  maintenance_heading: "### Maintenance Quick Reference"
+  maintenance_table:
+    - ["Goal", "Edit file"]
+    - ["Add paper / system", "`data/entries.yaml`"]
+    - ["Adjust curated timeline", "`data/timeline.yaml`"]
+    - ["Adjust full-timeline dates", "`data/timeline_dates.yaml` (`overrides` / `external`)"]
+    - ["Change README markers / titles", "`data/mermaid_config.yaml`"]
+  svg_optional_summary: "<b>Optional: YAML → SVG category map (slides / PPT)</b>"
+
+zh:
+  lang_link: "[English README](README.md)"
+  subtitle: "LLM 驱动的 GPU 内核生成与优化研究精选合集"
+  nav:
+    intro: "简介"
+    papers: "论文"
+    landscape: "全景图"
+    benchmarks: "基准"
+    tools: "工具"
+    resources: "传统优化"
+    contributing: "贡献"
+  intro_title: "简介"
+  intro_lead: >-
+    欢迎阅读 **Awesome LLM Kernel Agent** —— 这是一个关于使用大语言模型（LLM）进行 GPU 内核生成与优化的前沿研究精选合集。
+    本仓库追踪 AI 与高性能计算交汇的快速发展方向。
+  what_is_title: "什么是基于 LLM 的内核生成？"
+  what_is_lead: >-
+    GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次与硬件架构方面的深厚经验。
+    近年来 LLM 的发展为**自动化内核开发**带来了新的可能：
+  bullets:
+    - "**智能体系统**：多智能体框架迭代设计、优化与验证内核"
+    - "**强化学习**：训练模型发现最优内核实现"
+    - "**微调**：在内核代码数据集上训练专用模型"
+    - "**迭代优化**：基于 profiling 与 benchmark 的反馈驱动 refinement"
+  who_title: "适合谁阅读？"
+  who_items:
+    - "**研究人员**：探索 AI for Systems 与 HPC"
+    - "**ML 工程师**：优化深度学习 workload"
+    - "**GPU 开发者**：关注自动化内核生成"
+    - "**学生**：学习 AI 与计算机体系结构的交叉领域"
+  stats_title: "仓库统计"
+  stats:
+    - "**论文总数**：95+"
+    - "**最近更新**：2026 年 5 月"
+    - "**覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU"
+    - "**主要方法**：Agent、RL、微调、RAG、Prompt Engineering"
+  landscape_title: "全景图"
+  landscape_intro: >-
+    GitHub 会在 README 中**原生渲染 Mermaid**。全景图由 [`llm_kernel_agent_landscape/`](llm_kernel_agent_landscape/) 维护：**改 YAML → 生成 Mermaid → 同步到 README**。
+  landscape_cmd_comment: "校验 + 渲染 + 同步 README"
+  curated_timeline: "### 精选时间线"
+  full_timeline_summary: "<b>完整时间线（全部 curated entries + 待收录项）</b>"
+  category_map_summary: "<b>分类全景（5 大类别 flowchart）</b>"
+  maintenance_heading: "### 增量维护速查"
+  maintenance_table:
+    - ["目标", "编辑文件"]
+    - ["新增论文 / 系统", "`data/entries.yaml`"]
+    - ["调整精选时间线", "`data/timeline.yaml`"]
+    - ["调整完整时间线日期", "`data/timeline_dates.yaml`（`overrides` / `external`）"]
+    - ["改 README 锚点 / 标题", "`data/mermaid_config.yaml`"]
+  svg_optional_summary: "<b>可选：YAML → SVG 分类地图（slides / PPT）</b>"
+  papers_title: "研究论文"
+  methods_title: "基于 LLM 的内核生成方法"
+  methods_desc: "本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。"
+  methods_summary: "查看全部方法（61 篇）"
+  agent_title: "智能体方法论与技术"
+  agent_desc: "适用于内核生成与系统优化的通用智能体与推理技术。"
+  benchmarks_title: "数据集与基准"
+  benchmarks_desc: "用于评估 LLM 生成内核质量与性能的 benchmark 与数据集。"
+  traditional_title: "传统内核优化"
+  traditional_desc: "手工内核优化技术、DSL 与 GPU 编程基础资源。"
+  community_title: "社区与资源"
+  tools_title: "开源工具与框架"
+  tools_desc: "智能体内核优化系统与 CUDA 工程实践资源。"
+  blogs_title: "行业博客与新闻"
+  competitions_title: "竞赛与挑战"
+  contributing_title: "贡献指南"
+  contributing_lead: "欢迎贡献！若你知道应收录的论文、工具或资源，请："
+  contributing_steps:
+    - "**Fork** 本仓库"
+    - "按现有格式**添加**条目"
+    - "**提交** Pull Request 并附简要说明"
+  guidelines_title: "贡献规范"
+  guidelines:
+    - "确保论文/资源与 LLM 内核生成或 GPU 优化相关"
+    - "提供完整引用：标题、venue、日期与链接"
+    - "添加合适的 topic 标签"
+    - "保持时间倒序（最新在前）"
+    - "提交前检查是否重复"
+  citation_title: "引用"
+  citation_lead: "若本仓库对你的研究有帮助，欢迎引用："
+  license_title: "许可证"
+  license_text: "本项目采用 [Creative Commons Zero v1.0 Universal](LICENSE) 许可证。"
+  footer_star: "**⭐ 若觉得本仓库有帮助，欢迎 Star！⭐**"
+  footer_maintained: "由社区维护"
+  footer_updated: "最后更新：2026 年 5 月"
+  table_headers:
+    methods: ["标题", "发表 venue", "日期", "代码", "第一作者", "末位作者", "单位", "主题"]
+    agent: ["标题", "发表 venue", "日期", "代码", "第一作者", "单位", "主题"]
+    benchmarks: ["标题", "发表 venue", "日期", "代码", "第一作者", "末位作者", "单位", "平台"]
+    traditional: ["标题", "日期", "主题与资源"]
+    tools: ["标题", "日期", "代码", "主题"]
+    blogs: ["标题", "日期", "主题"]
+    competitions: ["活动", "日期", "平台"]

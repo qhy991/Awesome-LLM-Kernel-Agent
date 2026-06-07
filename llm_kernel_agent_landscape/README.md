@@ -44,17 +44,29 @@ pip install -r requirements.txt
 make all
 ```
 
-CI runs at repo root: `.github/workflows/render-landscape.yml` (validates + syncs README on push).
+CI runs at repo root: `.github/workflows/render-landscape.yml` (validates + syncs both READMEs on push).
 
-This validates data, writes Mermaid to `figures/`, and updates `../README.md`.
+This validates data, writes locale-specific Mermaid to `figures/`, generates `README.zh-CN.md`, and updates both README files.
 
 Generated Mermaid files:
 
 ```text
-figures/landscape_timeline_report.mmd   # compact timeline (README main view)
-figures/landscape_timeline_full.mmd     # all curated entries
-figures/landscape_category_map.mmd        # 5-category flowchart
+figures/landscape_timeline_report.en.mmd
+figures/landscape_timeline_report.zh.mmd
+figures/landscape_timeline_full.en.mmd
+figures/landscape_timeline_full.zh.mmd
+figures/landscape_category_map.en.mmd
+figures/landscape_category_map.zh.mmd
 ```
+
+## README languages
+
+| File | Language |
+|:-----|:---------|
+| `../README.md` | English (default) |
+| `../README.zh-CN.md` | Chinese |
+
+Locale strings: `data/readme_locale.yaml`. Timeline titles: `data/mermaid_config.yaml`.
 
 ## Common commands
 
@@ -62,8 +74,8 @@ figures/landscape_category_map.mmd        # 5-category flowchart
 |:--------|:-------|
 | `make validate` | Check entries + timeline references |
 | `make mermaid` | Regenerate `.mmd` only |
-| `make sync-readme` | Mermaid + patch root README |
-| `make all` | validate + sync-readme (default) |
+| `make sync-readme` | Mermaid + patch README.md and README.zh-CN.md |
+| `make all` | validate + mermaid + generate-readme-zh + sync-readme |
 | `make svg` | Optional legacy SVG landscape |
 
 ## How to add a new paper

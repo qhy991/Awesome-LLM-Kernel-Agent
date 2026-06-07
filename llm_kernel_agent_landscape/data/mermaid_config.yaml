@@ -1,6 +1,12 @@
 # Mermaid rendering & README sync configuration
 
-readme_path: ../README.md
+readme_files:
+  en:
+    path: ../README.md
+    locale: en
+  zh:
+    path: ../README.zh-CN.md
+    locale: zh
 
 markers:
   report_timeline:
@@ -15,14 +21,17 @@ markers:
 
 timelines:
   report:
-    title: "LLM Kernel Agent 方向与仓库覆盖时间线（精选）"
+    title_en: "LLM Kernel Agent Field Timeline (Curated)"
+    title_zh: "LLM Kernel Agent 方向与仓库覆盖时间线（精选）"
     source: data/timeline.yaml
   full:
-    title: "LLM Kernel Agent 完整时间线（全部 curated entries）"
+    title_en: "LLM Kernel Agent Full Timeline (All Curated Entries)"
+    title_zh: "LLM Kernel Agent 完整时间线（全部 curated entries）"
     include_external: true
 
 category_map:
-  title: "LLM Kernel Agent 分类全景"
+  title_en: "LLM Kernel Agent Category Map"
+  title_zh: "LLM Kernel Agent 分类全景"
   include_categories:
     - LLM4Kernel
     - Agent4Kernel

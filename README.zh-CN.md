@@ -4,65 +4,65 @@
 
 # 🚀 Awesome LLM Kernel Agent
 
-### _A Curated Collection of LLM-Driven GPU Kernel Generation & Optimization Research_
+### _LLM 驱动的 GPU 内核生成与优化研究精选合集_
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
 [![Papers](https://img.shields.io/badge/Papers-95+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-[中文 README](README.zh-CN.md)
+[English README](README.md)
 
-[📖 Introduction](#-introduction) • [📚 Papers](#-research-papers) • [🗺️ Landscape](#-landscape-map) • [🎯 Benchmarks](#-datasets-and-benchmarks) • [🧰 Tools](#-open-source-tools--frameworks) • [🛠️ Resources](#-traditional-kernel-optimization) • [🤝 Contributing](#-contributing)
+[📖 简介](#-简介) • [📚 论文](#-研究论文) • [🗺️ 全景图](#-全景图) • [🎯 基准](#-数据集与基准) • [🧰 工具](#-开源工具与框架) • [🛠️ 传统优化](#-传统内核优化) • [🤝 贡献](#-贡献指南)
 
 </div>
 
 ---
 
-## 📖 Introduction
+## 📖 简介
 
-Welcome to **Awesome LLM Kernel Agent** – a comprehensive collection of cutting-edge research on using Large Language Models (LLMs) for GPU kernel generation and optimization. This repository tracks the rapidly evolving field where AI meets high-performance computing.
+欢迎阅读 **Awesome LLM Kernel Agent** —— 这是一个关于使用大语言模型（LLM）进行 GPU 内核生成与优化的前沿研究精选合集。 本仓库追踪 AI 与高性能计算交汇的快速发展方向。
 
-### 🎯 What is LLM-Based Kernel Generation?
+### 🎯 什么是基于 LLM 的内核生成？
 
-GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in parallel computing, memory hierarchies, and hardware architectures. Recent advances in LLMs have opened new possibilities for **automating kernel development** through:
+GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次与硬件架构方面的深厚经验。 近年来 LLM 的发展为**自动化内核开发**带来了新的可能：
 
-- 🤖 **Agentic Systems**: Multi-agent frameworks that iteratively design, optimize, and verify kernels
-- 🎓 **Reinforcement Learning**: Training models to discover optimal kernel implementations
-- 🔧 **Fine-tuning**: Specialized models trained on kernel code datasets
-- 🔄 **Iterative Optimization**: Feedback-driven refinement using profiling and benchmarking
+- **智能体系统**：多智能体框架迭代设计、优化与验证内核
+- **强化学习**：训练模型发现最优内核实现
+- **微调**：在内核代码数据集上训练专用模型
+- **迭代优化**：基于 profiling 与 benchmark 的反馈驱动 refinement
 
-### 👥 Who Should Use This?
+### 👥 适合谁阅读？
 
-- **Researchers** exploring AI for systems and HPC
-- **ML Engineers** optimizing deep learning workloads
-- **GPU Developers** interested in automated kernel generation
-- **Students** learning about the intersection of AI and computer architecture
+- **研究人员**：探索 AI for Systems 与 HPC
+- **ML 工程师**：优化深度学习 workload
+- **GPU 开发者**：关注自动化内核生成
+- **学生**：学习 AI 与计算机体系结构的交叉领域
 
-### 📊 Repository Statistics
+### 📊 仓库统计
 
-- **Total Papers**: 95+
-- **Latest Addition**: May 2026
-- **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
-- **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
+- **论文总数**：95+
+- **最近更新**：2026 年 5 月
+- **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
+- **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
 
 ---
 
-## 🗺️ Landscape Map
+## 🗺️ 全景图
 
-GitHub **natively renders Mermaid** in README files. The landscape is maintained in [`llm_kernel_agent_landscape/`](llm_kernel_agent_landscape/): **edit YAML → generate Mermaid → sync to README**.
+GitHub 会在 README 中**原生渲染 Mermaid**。全景图由 [`llm_kernel_agent_landscape/`](llm_kernel_agent_landscape/) 维护：**改 YAML → 生成 Mermaid → 同步到 README**。
 
 ```bash
-cd llm_kernel_agent_landscape && make all   # validate + render + sync README
+cd llm_kernel_agent_landscape && make all   # 校验 + 渲染 + 同步 README
 ```
 
-### Curated Timeline
+### 精选时间线
 
 <!-- LANDSCAPE-TIMELINE-REPORT:BEGIN -->
 
 ```mermaid
 timeline
-    title LLM Kernel Agent Field Timeline (Curated)
+    title LLM Kernel Agent 方向与仓库覆盖时间线（精选）
     2023-09 : Comparing Llama-2 and GPT-3 LLMs for HPC kernels generation
     2025-02 : KernelBench
              : TritonBench
@@ -101,13 +101,13 @@ timeline
 <!-- LANDSCAPE-TIMELINE-REPORT:END -->
 
 <details>
-<summary><b>Full timeline (all curated entries + pending items)</b></summary>
+<summary><b>完整时间线（全部 curated entries + 待收录项）</b></summary>
 
 <!-- LANDSCAPE-TIMELINE-FULL:BEGIN -->
 
 ```mermaid
 timeline
-    title LLM Kernel Agent Full Timeline (All Curated Entries)
+    title LLM Kernel Agent 完整时间线（全部 curated entries）
     2023-09 : Comparing Llama-2 and GPT-3 LLMs for HPC kernels generation
     2024-06 : Stack v2 HPC
              : FlagGems
@@ -194,13 +194,13 @@ timeline
 </details>
 
 <details>
-<summary><b>Category map (5-column flowchart)</b></summary>
+<summary><b>分类全景（5 大类别 flowchart）</b></summary>
 
 <!-- LANDSCAPE-CATEGORY-MAP:BEGIN -->
 
 ```mermaid
 flowchart TB
-    subgraph llm4kernel["Model / Post-training"]
+    subgraph llm4kernel["模型 / 后训练"]
         direction TB
         autotrion["AutoTriton<br/><i>SFT + RL / Triton</i>"]
         qimen_kernel["QiMeng-Kernel<br/><i>Hierarchical kernel model</i>"]
@@ -222,7 +222,7 @@ flowchart TB
         kernelllm["KernelLLM<br/><i>Kernel-specialized LLM</i>"]
         maxcode["MaxCode<br/><i>Max-reward RL</i>"]
     end
-    subgraph agent4kernel["Agentic Workflow"]
+    subgraph agent4kernel["智能体工作流"]
         direction TB
         cuda_llm["CUDA-LLM<br/><i>Prompt + execution feedback</i>"]
         ai_cuda_engineer["AI CUDA Engineer<br/><i>Iterative discovery</i>"]
@@ -252,7 +252,7 @@ flowchart TB
         stitchcuda["StitchCUDA<br/><i>Multi-agent + RL</i>"]
         xe_forge["Xe-Forge<br/><i>Intel GPU multi-stage</i>"]
     end
-    subgraph datasets["Data Assets"]
+    subgraph datasets["数据资产"]
         direction TB
         flaggems["FlagGems<br/><i>Triton kernel library</i>"]
         stack_v2_hpc["Stack v2 HPC<br/><i>Code corpus</i>"]
@@ -262,7 +262,7 @@ flowchart TB
         kernelbook["KernelBook<br/><i>PyTorch→Triton pairs</i>"]
         liger_kernel["Liger-Kernel<br/><i>Kernel library</i>"]
     end
-    subgraph benchmarks["Evaluation"]
+    subgraph benchmarks["评测基准"]
         direction TB
         pareval["ParEval<br/><i>Parallel code eval</i>"]
         backendbench["BackendBench<br/><i>Backend generalization</i>"]
@@ -282,7 +282,7 @@ flowchart TB
         rooflinebench["RooflineBench<br/><i>Roofline analysis</i>"]
         sol_execbench["SOL-ExecBench<br/><i>Speed-of-light</i>"]
     end
-    subgraph systems___platforms["Integrated Systems"]
+    subgraph systems___platforms["集成系统"]
         direction TB
         autokernel["AutoKernel<br/><i>Kernel automation</i>"]
         kforge["KForge<br/><i>Cross-platform synthesis</i>"]
@@ -298,17 +298,17 @@ flowchart TB
 
 </details>
 
-### Maintenance Quick Reference
+### 增量维护速查
 
-| Goal | Edit file |
-|:-----|:---------|
-| Add paper / system | `data/entries.yaml` |
-| Adjust curated timeline | `data/timeline.yaml` |
-| Adjust full-timeline dates | `data/timeline_dates.yaml` (`overrides` / `external`) |
-| Change README markers / titles | `data/mermaid_config.yaml` |
+| 目标 | 编辑文件 |
+|:---:|:---|
+| 新增论文 / 系统 | `data/entries.yaml` |
+| 调整精选时间线 | `data/timeline.yaml` |
+| 调整完整时间线日期 | `data/timeline_dates.yaml`（`overrides` / `external`） |
+| 改 README 锚点 / 标题 | `data/mermaid_config.yaml` |
 
 <details>
-<summary><b>Optional: YAML → SVG category map (slides / PPT)</b></summary>
+<summary><b>可选：YAML → SVG 分类地图（slides / PPT）</b></summary>
 
 ```bash
 cd llm_kernel_agent_landscape && make svg pptx drawio
@@ -316,19 +316,20 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 </details>
 
+
 ---
 
-## 📚 Research Papers
+## 📚 研究论文
 
-### 🤖 LLM-Based Kernel Generation Methods
+### 🤖 基于 LLM 的内核生成方法
 
-> This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
+> 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 View All Methods (61 papers)</b></summary>
+<summary><b>📋 查看全部方法（61 篇）</b></summary>
 
-| Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
-| :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
+| :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
 | [**Xe-Forge: Multi-Stage LLM-Powered Kernel Optimization for Intel GPU**](https://arxiv.org/abs/2605.26118)                                                                                                                      |     arXiv      | 2026-05 |                                                     -                                                     |  Marcin Spoczynski  | Alexander Heinecke |                                                                                                                                 Intel Corporation                                                                                                                                 |              `Intel-GPU` `Agent` `Multi-Stage` `Kernel-Optimization`              |
 | [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |
 | [**FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow**](https://arxiv.org/abs/2604.26666)                                                                                                                  |     arXiv      | 2026-04 |                                                     -                                                     |    Sina Heidari     | Dimitrios S. Nikolopoulos |                                                                                                                          Virginia Tech, Blacksburg, Virginia, USA                                                                                                                           |              `CUTLASS` `Agent` `Auto-Tuning` `Multi-Pattern` `KernelBench`              |
@@ -392,11 +393,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 ---
 
-### 🧠 Agent Methodology & Techniques
+### 🧠 智能体方法论与技术
 
-> General agentic and reasoning techniques applicable to kernel generation and systems optimization.
+> 适用于内核生成与系统优化的通用智能体与推理技术。
 
-| Title                                                                                                             | Venue |  Date   |                     Code                      |   First Author    |                                        Affiliation                                        |                   Topics                    |
+| 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 单位 | 主题 |
 | :---------------------------------------------------------------------------------------------------------------- | :---: | :-----: | :-------------------------------------------: | :---------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------: |
 | [**Using GUI Agent for Electronic Design Automation**](https://arxiv.org/pdf/2512.11611)                          | arXiv | 2025-12 | [GitHub](https://github.com/aiben-ch/GUI-EDA) |     Chunyi Li     | Nanyang Technological University / Shanghai Jiao Tong University / Shanghai AI Laboratory |    `GUI-Agent` `EDA` `CAD` `Multimodal`     |
 | [**OS-R1: Agentic Operating System Kernel Tuning with Reinforcement Learning**](https://arxiv.org/abs/2508.12551) | arXiv | 2025-08 |                       -                       |    Hongyu Lin     |                                             -                                             |          `OS-Kernel` `RL` `Agent`           |
@@ -405,11 +406,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 ---
 
-### 📊 Datasets and Benchmarks
+### 📊 数据集与基准
 
-> Evaluation benchmarks and datasets for assessing LLM-generated kernel quality and performance.
+> 用于评估 LLM 生成内核质量与性能的 benchmark 与数据集。
 
-| Title                                                                                                                                                                                                                                                                                |    Venue    |  Date   |                                                          Code                                                           |          First Author          |          Last Author          |                                        Affiliation                                        |             Platforms              |
+| 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 平台 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
 | [**FastKernels: Benchmarking GPU Kernel Generation in Production**](https://arxiv.org/abs/2605.23215)                                                                                                                                                              |    arXiv    | 2026-05 |                                                            -                                                            |   Gabriele Oliaro   | Samyam Rajbhandari |                                                                 Snowflake AI Research, CMU, UCSD, Independent Researcher                                                                 |     `CUDA` `Benchmark` `Production-Inference` `Framework-Aligned`     |
 | [**KernelBenchX: A Comprehensive Benchmark for Evaluating LLM-Generated GPU Kernels**](https://arxiv.org/abs/2605.04956)                                                                                                                                           |    arXiv    | 2026-05 |                                                            -                                                            |      Han Wang       |      Jun Zhu       |                                                                                                                                          -                                                                                                                                          |     `CUDA` `Benchmark` `Failure-Analysis` `Kernel-Generation` `Evaluation`     |
@@ -430,11 +431,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 ---
 
-### 🛠️ Traditional Kernel Optimization
+### 🛠️ 传统内核优化
 
-> Manual kernel optimization techniques, DSLs, and educational resources for understanding GPU programming fundamentals.
+> 手工内核优化技术、DSL 与 GPU 编程基础资源。
 
-| Title                                                                                                                                                                                                |  Date   |                                  Topics & Resources                                   |
+| 标题 | 日期 | 主题与资源 |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :-----------------------------------------------------------------------------------: |
 | [**Evaluating CUDA Tile for AI Workloads on Hopper and Blackwell GPUs**](https://arxiv.org/abs/2604.23466)                                                                                          | 2026-04 | `First Author: Divakar Kumar Yadav` `Corresponding Author: Deepak Kumar` `University of Wisconsin-Milwaukee` `Illinois Institute of Technology` |
 | [**Execution-Centric Characterization of FP8 Matrix Cores, Asynchronous Execution, and Structured Sparsity on AMD MI300A**](https://arxiv.org/abs/2602.10262)                                      | 2026-02 |                    `AMD-GPU` `MI300A` `FP8` `Asynchronous-Execution` `Structured-Sparsity`                    |
@@ -453,13 +454,13 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 ---
 
-## 🌟 Community & Resources
+## 🌟 社区与资源
 
-### 🧰 Open-Source Tools & Frameworks
+### 🧰 开源工具与框架
 
-> Agentic kernel optimization systems and hands-on CUDA engineering resources.
+> 智能体内核优化系统与 CUDA 工程实践资源。
 
-| Title                                                                                                                                 |  Date   | Code | Topics |
+| 标题 | 日期 | 代码 | 主题 |
 | :------------------------------------------------------------------------------------------------------------------------------------ | :-----: | :--: | :----: |
 | ![Star](https://img.shields.io/github/stars/TongmingLAIC/AKO4ALL.svg?style=social&label=Star) [**AKO4ALL: Agentic Kernel Optimization for All**](https://github.com/TongmingLAIC/AKO4ALL) | 2026-03 | [GitHub](https://github.com/TongmingLAIC/AKO4ALL) | `Agent` `CUDA` `Triton` `NCU` `Iterative-Optimization` `KernelBench` |
 | ![Star](https://img.shields.io/github/stars/0satan0/KernelMem.svg?style=social&label=Star) [**KernelMem: Automatic CUDA Kernel Generation and Optimization with Memory**](https://github.com/0satan0/KernelMem) |    -    | [GitHub](https://github.com/0satan0/KernelMem) | `CUDA` `Multi-Agent` `Memory` `NCU` `NSYS` `KernelBench` |
@@ -467,44 +468,45 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 ---
 
-### 📰 Industry Blogs & News
+### 📰 行业博客与新闻
 
-| Title                                                                                                                                                                                               |  Date   |                  Topics                   |
+| 标题 | 日期 | 主题 |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :---------------------------------------: |
 | [**Benchmarking LLMs on AI-Generated CUDA Code with ComputeEval 2025.2**](https://developer.nvidia.com/blog/benchmarking-llms-on-ai-generated-cuda-code-with-computeeval-2025-2/)                   | 2025-11 | `NVIDIA` `ComputeEval` `CUDA` `Benchmark` |
 | [**Announcing ComputeEval, an Open Source Framework for Evaluating LLMs on CUDA**](https://developer.nvidia.com/blog/announcing-computeeval-an-open-source-framework-for-evaluating-llms-on-cuda/)  | 2025-04 | `NVIDIA` `ComputeEval` `CUDA` `Framework` |
 | [**Automating GPU Kernel Generation with DeepSeek-R1 and Inference Time Scaling**](https://developer.nvidia.com/blog/automating-gpu-kernel-generation-with-deepseek-r1-and-inference-time-scaling/) |  2025   |       `NVIDIA` `DeepSeek-R1` `CUDA`       |
 
-### 🏆 Competitions & Challenges
+### 🏆 竞赛与挑战
 
-| Event                                                                                     |  Date   |   Platform   |
+| 活动 | 日期 | 平台 |
 | :---------------------------------------------------------------------------------------- | :-----: | :----------: |
 | [AMD Developer Challenge 2025](https://www.datamonsters.com/amd-developer-challenge-2025) | 2025-04 |  `AMD-GPU`   |
 | [GPU Mode Leaderboard](https://www.gpumode.com/)                                          | Ongoing | `AMD` `CUDA` |
 
 ---
 
-## 🤝 Contributing
+## 🤝 贡献指南
 
-We welcome contributions! If you know of a paper, tool, or resource that should be included, please:
+欢迎贡献！若你知道应收录的论文、工具或资源，请：
 
-1. **Fork** this repository
-2. **Add** your entry following the existing format
-3. **Submit** a pull request with a brief description
+1. **Fork** 本仓库
+2. 按现有格式**添加**条目
+3. **提交** Pull Request 并附简要说明
 
-### Contribution Guidelines
+### 贡献规范
 
-- Ensure the paper/resource is relevant to LLM-based kernel generation or GPU optimization
-- Include proper citation with title, venue, date, and links
-- Add appropriate topic tags
-- Maintain chronological order (newest first)
-- Check for duplicates before submitting
+- 确保论文/资源与 LLM 内核生成或 GPU 优化相关
+- 提供完整引用：标题、venue、日期与链接
+- 添加合适的 topic 标签
+- 保持时间倒序（最新在前）
+- 提交前检查是否重复
 
 ---
 
-## 📄 Citation
 
-If you find this repository useful for your research, please consider citing:
+## 📄 引用
+
+若本仓库对你的研究有帮助，欢迎引用：
 
 ```bibtex
 @misc{awesome-llm-kernel-agent,
@@ -512,26 +514,26 @@ If you find this repository useful for your research, please consider citing:
   title = {Awesome LLM Kernel Agent: A Curated Collection of LLM-Driven GPU Kernel Generation Research},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/qhy991/Awsome-LLM-Kernel-Agent}
+  url = {https://github.com/qhy991/Awesome-LLM-Kernel-Agent}
 }
 ```
 
 ---
 
-## 📜 License
+## 📜 许可证
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-This work is licensed under a [Creative Commons Zero v1.0 Universal](LICENSE) license.
+本项目采用 [Creative Commons Zero v1.0 Universal](LICENSE) 许可证。
 
 ---
 
 <div align="center">
 
-**⭐ If you find this repository helpful, please consider giving it a star! ⭐**
+**⭐ 若觉得本仓库有帮助，欢迎 Star！⭐**
 
-Maintained with ❤️ by the community
+由社区维护
 
-_Last Updated: May 2026_
+_最后更新：2026 年 5 月_
 
 </div>

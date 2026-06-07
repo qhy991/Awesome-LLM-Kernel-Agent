@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Mermaid diagrams from landscape YAML data.
+"""Generate Mermaid diagrams from landscape YAML data (EN + ZH).
 
 Usage:
     python scripts/render_mermaid.py
@@ -26,13 +26,19 @@ from mermaid_lib import (  # noqa: E402
     sanitize_mermaid_text,
 )
 
+LOCALES = ("en", "zh")
 
-def build_report_timeline(data: dict[str, Any]) -> str:
+
+def timeline_title(cfg: dict[str, Any], key: str, locale: str) -> str:
+    block = cfg["timelines"][key]
+    return block[f"title_{locale}"]
+
+
+def build_report_timeline(data: dict[str, Any], locale: str) -> str:
     entries_by_id = build_entries_by_id(data["entries"])
-    timeline_cfg = data["timeline"]
     buckets: list[tuple[str, list[str]]] = []
 
-    for bucket in timeline_cfg.get("buckets", []):
+    for bucket in data["timeline"].get("buckets", []):
         date = bucket["date"]
         labels = [
             resolve_item_label(item, entries_by_id)
@@ -40,11 +46,11 @@ def build_report_timeline(data: dict[str, Any]) -> str:
         ]
         buckets.append((date, labels))
 
-    title = data["config"]["timelines"]["report"]["title"]
+    title = timeline_title(data["config"], "report", locale)
     return render_timeline(title, buckets)
 
 
-def build_full_timeline(data: dict[str, Any]) -> str:
+def build_full_timeline(data: dict[str, Any], locale: str) -> str:
     entries_by_id = build_entries_by_id(data["entries"])
     dates_cfg = data["timeline_dates"]
     period_defaults = dates_cfg.get("period_defaults", {})
@@ -62,22 +68,25 @@ def build_full_timeline(data: dict[str, Any]) -> str:
             items.append((ext["date"], sanitize_mermaid_text(ext["label"])))
 
     buckets = group_labels_by_date(items)
-    title = data["config"]["timelines"]["full"]["title"]
+    title = timeline_title(data["config"], "full", locale)
     return render_timeline(title, buckets)
 
 
-def build_category_map(data: dict[str, Any]) -> str:
+def build_category_map(data: dict[str, Any], locale: str) -> str:
     cfg = data["config"]["category_map"]
     categories = data["categories"]["categories"]
     include = cfg.get("include_categories") or list(categories.keys())
+    title_key = f"title_{locale}"
 
     lines = ["flowchart TB"]
 
     for category in include:
         cat_cfg = categories[category]
-        title_en = sanitize_mermaid_text(cat_cfg.get("title_en", category))
+        cat_title = sanitize_mermaid_text(
+            cat_cfg.get(title_key, cat_cfg.get("title_en", category))
+        )
         node_id = category.replace(" ", "_").replace("/", "_").lower()
-        lines.append(f'    subgraph {node_id}["{title_en}"]')
+        lines.append(f'    subgraph {node_id}["{cat_title}"]')
         lines.append("        direction TB")
 
         cat_entries = [
@@ -104,21 +113,21 @@ def main() -> int:
     data = load_landscape_data()
     OUT.mkdir(parents=True, exist_ok=True)
 
-    report = build_report_timeline(data)
-    full = build_full_timeline(data)
-    category = build_category_map(data)
+    for locale in LOCALES:
+        report = build_report_timeline(data, locale)
+        full = build_full_timeline(data, locale)
+        category = build_category_map(data, locale)
 
-    (OUT / "landscape_timeline_report.mmd").write_text(report, encoding="utf-8")
-    (OUT / "landscape_timeline_full.mmd").write_text(full, encoding="utf-8")
-    (OUT / "landscape_category_map.mmd").write_text(category, encoding="utf-8")
+        (OUT / f"landscape_timeline_report.{locale}.mmd").write_text(report, encoding="utf-8")
+        (OUT / f"landscape_timeline_full.{locale}.mmd").write_text(full, encoding="utf-8")
+        (OUT / f"landscape_category_map.{locale}.mmd").write_text(category, encoding="utf-8")
+
+        print(f"Wrote landscape_*.{locale}.mmd")
 
     report_count = sum(len(b.get("items", [])) for b in data["timeline"].get("buckets", []))
     full_count = len([e for e in data["entries"] if e.get("show_in_full", True)])
     full_count += len(data["timeline_dates"].get("external", []))
-
-    print(f"Wrote {OUT / 'landscape_timeline_report.mmd'} ({report_count} items)")
-    print(f"Wrote {OUT / 'landscape_timeline_full.mmd'} ({full_count} items)")
-    print(f"Wrote {OUT / 'landscape_category_map.mmd'}")
+    print(f"Timeline items: report={report_count}, full={full_count}")
     return 0
 
 
