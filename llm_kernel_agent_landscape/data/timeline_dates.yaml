@@ -84,6 +84,7 @@ overrides:
   model2kernel: "2026-03"
   ascendcraft: "2026-01"
   kernel_contracts: "2026-04"
+  musacoder: "2026-06"
   kernelowl: "2026-03"
 
 # Free-form labels shown on the full timeline but not backed by entries.yaml

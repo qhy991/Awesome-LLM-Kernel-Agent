@@ -1197,6 +1197,27 @@
   show_in_full: true
   timeline_date: "2026-04"
   notes: Specification language for ML kernel correctness across heterogeneous silicon.
+- id: musacoder
+  name: MusaCoder
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Full-stack CUDA/MUSA RL
+  backends:
+  - CUDA
+  - MUSA
+  method_tags:
+  - rl
+  - sft
+  - kernel-generation
+  source: awesome_llm_kernel_agent
+  affiliation_short: Moore Threads AI
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-06"
+  url: https://arxiv.org/abs/2606.04847
+  notes: Native CUDA/MUSA kernel generation with MooreEval execution-feedback RL on Moore Threads GPUs.
 - id: kernelowl
   name: KernelOwl
   year: 2026

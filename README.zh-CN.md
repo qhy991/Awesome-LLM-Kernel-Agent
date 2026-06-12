@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：95+
+- **论文总数**：96+
 - **最近更新**：2026 年 5 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -96,6 +96,7 @@ timeline
              : Xe-Forge
     2026-05 : KernelBenchX
              : FastKernels
+    2026-06 : MusaCoder
 ```
 
 <!-- LANDSCAPE-TIMELINE-REPORT:END -->
@@ -187,6 +188,7 @@ timeline
              : FastKernels
              : KernelBenchX
              : Xe-Forge
+    2026-06 : MusaCoder
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -221,6 +223,7 @@ flowchart TB
         incoder32b["InCoder-32B<br/><i>Industrial code LLM</i>"]
         kernelllm["KernelLLM<br/><i>Kernel-specialized LLM</i>"]
         maxcode["MaxCode<br/><i>Max-reward RL</i>"]
+        musacoder["MusaCoder<br/><i>Full-stack CUDA/MUSA RL</i>"]
     end
     subgraph agent4kernel["智能体工作流"]
         direction TB
@@ -326,10 +329,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（61 篇）</b></summary>
+<summary><b>📋 查看全部方法（62 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**MusaCoder: Native GPU Kernel Generation with Full-Stack Training on Moore Threads GPU**](https://arxiv.org/abs/2606.04847)                                                                                                    |     arXiv      | 2026-06 | [🤗 Model](https://huggingface.co/MooreThreads/MusaCoder-27B) |      Kun Cheng      |    Yaohua Tang     |                                                                                                                                 Moore Threads AI                                                                                                                                 |        `CUDA` `MUSA` `RL` `SFT` `Kernel-Generation` `MooreEval` `KernelBench`        |
 | [**Xe-Forge: Multi-Stage LLM-Powered Kernel Optimization for Intel GPU**](https://arxiv.org/abs/2605.26118)                                                                                                                      |     arXiv      | 2026-05 |                                                     -                                                     |  Marcin Spoczynski  | Alexander Heinecke |                                                                                                                                 Intel Corporation                                                                                                                                 |              `Intel-GPU` `Agent` `Multi-Stage` `Kernel-Optimization`              |
 | [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |
 | [**FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow**](https://arxiv.org/abs/2604.26666)                                                                                                                  |     arXiv      | 2026-04 |                                                     -                                                     |    Sina Heidari     | Dimitrios S. Nikolopoulos |                                                                                                                          Virginia Tech, Blacksburg, Virginia, USA                                                                                                                           |              `CUTLASS` `Agent` `Auto-Tuning` `Multi-Pattern` `KernelBench`              |

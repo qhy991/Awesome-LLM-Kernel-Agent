@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-95+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-96+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 95+
+- **Total Papers**: 96+
 - **Latest Addition**: May 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -96,6 +96,7 @@ timeline
              : Xe-Forge
     2026-05 : KernelBenchX
              : FastKernels
+    2026-06 : MusaCoder
 ```
 
 <!-- LANDSCAPE-TIMELINE-REPORT:END -->
@@ -187,6 +188,7 @@ timeline
              : FastKernels
              : KernelBenchX
              : Xe-Forge
+    2026-06 : MusaCoder
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -221,6 +223,7 @@ flowchart TB
         incoder32b["InCoder-32B<br/><i>Industrial code LLM</i>"]
         kernelllm["KernelLLM<br/><i>Kernel-specialized LLM</i>"]
         maxcode["MaxCode<br/><i>Max-reward RL</i>"]
+        musacoder["MusaCoder<br/><i>Full-stack CUDA/MUSA RL</i>"]
     end
     subgraph agent4kernel["Agentic Workflow"]
         direction TB
@@ -325,10 +328,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (61 papers)</b></summary>
+<summary><b>📋 View All Methods (62 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**MusaCoder: Native GPU Kernel Generation with Full-Stack Training on Moore Threads GPU**](https://arxiv.org/abs/2606.04847)                                                                                                    |     arXiv      | 2026-06 | [🤗 Model](https://huggingface.co/MooreThreads/MusaCoder-27B) |      Kun Cheng      |    Yaohua Tang     |                                                                                                                                 Moore Threads AI                                                                                                                                 |        `CUDA` `MUSA` `RL` `SFT` `Kernel-Generation` `MooreEval` `KernelBench`        |
 | [**Xe-Forge: Multi-Stage LLM-Powered Kernel Optimization for Intel GPU**](https://arxiv.org/abs/2605.26118)                                                                                                                      |     arXiv      | 2026-05 |                                                     -                                                     |  Marcin Spoczynski  | Alexander Heinecke |                                                                                                                                 Intel Corporation                                                                                                                                 |              `Intel-GPU` `Agent` `Multi-Stage` `Kernel-Optimization`              |
 | [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |
 | [**FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow**](https://arxiv.org/abs/2604.26666)                                                                                                                  |     arXiv      | 2026-04 |                                                     -                                                     |    Sina Heidari     | Dimitrios S. Nikolopoulos |                                                                                                                          Virginia Tech, Blacksburg, Virginia, USA                                                                                                                           |              `CUTLASS` `Agent` `Auto-Tuning` `Multi-Pattern` `KernelBench`              |

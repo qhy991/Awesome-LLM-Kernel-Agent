@@ -75,3 +75,7 @@ buckets:
     items:
       - id: kernelbenchx
       - id: fastkernels
+
+  - date: "2026-06"
+    items:
+      - id: musacoder
