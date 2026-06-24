@@ -19,3 +19,6 @@
 - date: 2026-06-12
   version: v0.5.1
   summary: "Added MusaCoder (Moore Threads AI) — native CUDA/MUSA kernel generation with full-stack RL training."
+- date: 2026-06-15
+  version: v0.5.2
+  summary: "Added daVinci-kernel (SII, SJTU GAIR) — co-evolving skill library RL for CUDA/Triton kernel optimization."

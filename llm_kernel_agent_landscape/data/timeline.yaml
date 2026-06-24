@@ -78,4 +78,5 @@ buckets:
 
   - date: "2026-06"
     items:
+      - id: davinci_kernel
       - id: musacoder

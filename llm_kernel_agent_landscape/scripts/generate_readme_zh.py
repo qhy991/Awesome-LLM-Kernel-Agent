@@ -53,7 +53,7 @@ def translate_papers_block(en_readme: str, zh: dict) -> str:
         f"> {zh['methods_desc']}",
     )
     papers_block = papers_block.replace(
-        "<summary><b>📋 View All Methods (62 papers)</b></summary>",
+        "<summary><b>📋 View All Methods (63 papers)</b></summary>",
         f"<summary><b>📋 {zh['methods_summary']}</b></summary>",
     )
     papers_block = re.sub(
@@ -306,7 +306,7 @@ def main() -> int:
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-96+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-97+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 {zh['lang_link']}
