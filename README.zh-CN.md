@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-97+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-99+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：97+
+- **论文总数**：99+
 - **最近更新**：2026 年 5 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -96,7 +96,9 @@ timeline
              : Xe-Forge
     2026-05 : KernelBenchX
              : FastKernels
-    2026-06 : daVinci-kernel
+    2026-06 : SOLAR
+             : daVinci-kernel
+             : AutoMegaKernel
              : MusaCoder
 ```
 
@@ -190,7 +192,9 @@ timeline
              : KernelBenchX
              : Xe-Forge
     2026-06 : MusaCoder
+             : AutoMegaKernel
              : daVinci-kernel
+             : SOLAR
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -245,6 +249,7 @@ flowchart TB
         cupilot["cuPilot<br/><i>Strategy-coordinated evolution</i>"]
         argus["ARGUS<br/><i>Data-flow invariants</i>"]
         adaexplore["AdaExplore<br/><i>Failure-driven search</i>"]
+        automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
         k_search["K-Search<br/><i>Co-evolving world model</i>"]
@@ -254,6 +259,7 @@ flowchart TB
         kernelskill["KernelSkill<br/><i>Multi-agent + memory</i>"]
         model2kernel["Model2Kernel<br/><i>Symbolic execution safety</i>"]
         optiml["OptiML<br/><i>Two-stage synthesis</i>"]
+        solar["SOLAR<br/><i>SOL performance analysis</i>"]
         stitchcuda["StitchCUDA<br/><i>Multi-agent + RL</i>"]
         xe_forge["Xe-Forge<br/><i>Intel GPU multi-stage</i>"]
         davinci_kernel["daVinci-kernel<br/><i>Co-evolving skill library</i>"]
@@ -332,11 +338,13 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（63 篇）</b></summary>
+<summary><b>📋 查看全部方法（65 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**SOLAR: AI-Powered Speed-of-Light Performance Analysis**](https://arxiv.org/abs/2606.26383)                                                                                                                                  |     arXiv      | 2026-06 |                           [GitHub](https://github.com/NVlabs/SOLAR)                           |    Qijing Huang     | Christos Kozyrakis |                                                                                                                                 NVIDIA                                                                                                                                 |     `CUDA` `SOL` `Speed-of-Light` `LLM` `KernelBench` `Performance-Analysis` `Agent`     |
 | [**daVinci-kernel: Co-Evolving Skill Selection, Summarization, and Utilization via RL for GPU Kernel Optimization**](https://arxiv.org/abs/2606.16497)                                                                          |     arXiv      | 2026-06 |                                                     -                                                     |     Dayuan Fu       |    Jinlong Hou     |                                                                                                                                    SII; SJTU GAIR                                                                                                                                    |     `CUDA` `Triton` `RL` `Multi-Agent` `Skill-Library` `KernelBench` `SFT`     |
+| [**AutoMegaKernel: A Statically-Checked Agent Harness for Self-Retargeting Megakernel Synthesis**](https://arxiv.org/abs/2606.09682)                                                                                            |     arXiv      | 2026-06 |                           [GitHub](https://github.com/RightNow-AI/AutoMegaKernel)                           |     Jaber Jaber     |    Osama Jaber     |                                                                                                                                 RightNow AI                                                                                                                                 |     `CUDA` `Agent` `Megakernel` `LLM-Inference` `Static-Verification` `Self-Retargeting`     |
 | [**MusaCoder: Native GPU Kernel Generation with Full-Stack Training on Moore Threads GPU**](https://arxiv.org/abs/2606.04847)                                                                                                    |     arXiv      | 2026-06 | [🤗 Model](https://huggingface.co/MooreThreads/MusaCoder-27B) |      Kun Cheng      |    Yaohua Tang     |                                                                                                                                 Moore Threads AI                                                                                                                                 |        `CUDA` `MUSA` `RL` `SFT` `Kernel-Generation` `MooreEval` `KernelBench`        |
 | [**Xe-Forge: Multi-Stage LLM-Powered Kernel Optimization for Intel GPU**](https://arxiv.org/abs/2605.26118)                                                                                                                      |     arXiv      | 2026-05 |                                                     -                                                     |  Marcin Spoczynski  | Alexander Heinecke |                                                                                                                                 Intel Corporation                                                                                                                                 |              `Intel-GPU` `Agent` `Multi-Stage` `Kernel-Optimization`              |
 | [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |

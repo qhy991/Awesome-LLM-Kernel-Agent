@@ -22,3 +22,9 @@
 - date: 2026-06-15
   version: v0.5.2
   summary: "Added daVinci-kernel (SII, SJTU GAIR) — co-evolving skill library RL for CUDA/Triton kernel optimization."
+- date: 2026-06-08
+  version: v0.5.3
+  summary: "Added AutoMegaKernel (RightNow AI) — statically-checked agent harness for self-retargeting megakernel synthesis."
+- date: 2026-06-26
+  version: v0.5.4
+  summary: "Added SOLAR (NVIDIA) — LLM-powered speed-of-light performance analysis from PyTorch/JAX source."

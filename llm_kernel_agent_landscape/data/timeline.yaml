@@ -78,5 +78,7 @@ buckets:
 
   - date: "2026-06"
     items:
+      - id: solar
       - id: davinci_kernel
+      - id: automegakernel
       - id: musacoder

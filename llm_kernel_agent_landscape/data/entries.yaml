@@ -1218,6 +1218,25 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.04847
   notes: Native CUDA/MUSA kernel generation with MooreEval execution-feedback RL on Moore Threads GPUs.
+- id: automegakernel
+  name: AutoMegaKernel
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Megakernel agent harness
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - verification
+  source: awesome_llm_kernel_agent
+  affiliation_short: RightNow AI
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-06"
+  url: https://arxiv.org/abs/2606.09682
+  notes: Statically-checked agent harness for self-retargeting Llama megakernel synthesis.
 - id: davinci_kernel
   name: daVinci-kernel
   year: 2026
@@ -1239,6 +1258,25 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.16497
   notes: RL framework co-evolving skill selection, summarization, and kernel generation via a dynamic skill library.
+- id: solar
+  name: SOLAR
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: SOL performance analysis
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - benchmark
+  source: awesome_llm_kernel_agent
+  affiliation_short: NVIDIA
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-06"
+  url: https://arxiv.org/abs/2606.26383
+  notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
 - id: kernelowl
   name: KernelOwl
   year: 2026
