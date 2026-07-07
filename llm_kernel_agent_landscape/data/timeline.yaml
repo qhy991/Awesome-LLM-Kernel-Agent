@@ -60,6 +60,7 @@ buckets:
 
   - date: "2026-03"
     items:
+      - id: autokernel
       - id: kernelfoundry
       - id: drtriton
       - id: cudabench

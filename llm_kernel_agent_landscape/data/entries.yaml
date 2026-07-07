@@ -920,20 +920,25 @@
   show_in_full: true
 - id: autokernel
   name: AutoKernel
-  year: 2024
-  period: '2024'
-  category: Systems / Platforms
-  subcategory: Kernel automation
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Iterative agent-driven search
   backends:
   - CUDA
   - Triton
   method_tags:
-  - system
+  - agent
+  - profiling
+  - verification
   source: awesome_llm_kernel_agent
-  affiliation_short: —
-  display_priority: 0
-  show_in_report: true
+  affiliation_short: RightNow AI
+  display_priority: 2
+  show_in_report: false
   show_in_full: true
+  timeline_date: "2026-03"
+  url: https://arxiv.org/abs/2603.21331
+  notes: Autonomous agent loop for PyTorch kernel optimization with Amdahl-guided prioritization and five-stage correctness harness.
 - id: kforge
   name: KForge
   year: 2025

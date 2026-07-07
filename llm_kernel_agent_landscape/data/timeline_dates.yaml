@@ -67,7 +67,7 @@ overrides:
   flashinfer_bench: "2026-01"
   kernelcraft: "2026-03"
   rooflinebench: "2026-02"
-  autokernel: "2024-06"
+  autokernel: "2026-03"
   kforge: "2025-11"
   kernelevolve: "2025-11"
   kernelfalcon: "2025-11"

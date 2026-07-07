@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-99+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-100+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 99+
+- **Total Papers**: 100+
 - **Latest Addition**: May 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -87,7 +87,8 @@ timeline
              : AscendCraft
     2026-02 : Dr. Kernel
              : OptiML
-    2026-03 : KernelFoundry
+    2026-03 : AutoKernel
+             : KernelFoundry
              : DRTriton
              : CUDABench
              : Model2Kernel
@@ -116,7 +117,6 @@ timeline
     2024-06 : Stack v2 HPC
              : FlagGems
              : ParEval
-             : AutoKernel
     2025-02 : AI CUDA Engineer
              : AI-CUDA Archive
              : KernelBench
@@ -177,6 +177,7 @@ timeline
              : CUDABench
              : SOL-ExecBench
              : KernelCraft
+             : AutoKernel
              : KernelMem
              : AKO4ALL
              : KernelFoundry
@@ -249,6 +250,7 @@ flowchart TB
         cupilot["cuPilot<br/><i>Strategy-coordinated evolution</i>"]
         argus["ARGUS<br/><i>Data-flow invariants</i>"]
         adaexplore["AdaExplore<br/><i>Failure-driven search</i>"]
+        autokernel["AutoKernel<br/><i>Iterative agent-driven search</i>"]
         automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
@@ -296,7 +298,6 @@ flowchart TB
     end
     subgraph systems___platforms["Integrated Systems"]
         direction TB
-        autokernel["AutoKernel<br/><i>Kernel automation</i>"]
         kforge["KForge<br/><i>Cross-platform synthesis</i>"]
         kernelevolve["KernelEvolve<br/><i>Evolutionary system</i>"]
         kernelfalcon["KernelFalcon<br/><i>Deep agents</i>"]
@@ -337,7 +338,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (65 papers)</b></summary>
+<summary><b>📋 View All Methods (66 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
@@ -355,6 +356,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 | [**InCoder-32B: Code Foundation Model for Industrial Scenarios**](https://arxiv.org/abs/2603.16790)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Jian Yang      |    Weifeng Lv      |                                                                                                                                    Beihang University, iQuest Research, Shanghai Jiao Tong University, ELLIS, University of Manchester, Shanghai Artificial Intelligence Laboratory, Sichuan University, Gaoling School of Artificial Intelligence, Renmin University of China, Langboat                                                                                                                                    |                    `Code-LLM` `Industrial-Scenarios` `Kernel-Optimization` `Foundation-Model`                    |
 | [**Model2Kernel: Model-Aware Symbolic Execution For Safe CUDA Kernels**](https://arxiv.org/abs/2603.24595)                                                                                                                         |     arXiv      | 2026-03 |                                                     -                                                     |     Mengting He     |    Linhai Song     |                                                                                                                                          -                                                                                                                                          |              `CUDA` `Symbolic-Execution` `Verification` `Memory-Safety` `Agent`              |
 | [**KernelFoundry: Hardware-aware evolutionary GPU kernel optimization**](https://arxiv.org/abs/2603.12440)                                                                                                                         |     arXiv      | 2026-03 |                                                     -                                                     |   Nina Wiedemann    | Benjamin Ummenhofer |                                                                                                                                 Intel Corporation                                                                                                                                 |           `CUDA` `SYCL` `Evolutionary-Search` `Hardware-Aware` `Cross-Platform`            |
+| ![Star](https://img.shields.io/github/stars/RightNow-AI/autokernel.svg?style=social&label=Star) [**AutoKernel: Autonomous GPU Kernel Optimization via Iterative Agent-Driven Search**](https://arxiv.org/abs/2603.21331)          |     arXiv      | 2026-03 |                           [GitHub](https://github.com/RightNow-AI/autokernel)                           |     Jaber Jaber     |    Osama Jaber     |                                                                                                                                 RightNow AI                                                                                                                                 |     `CUDA` `Triton` `Agent` `Kernel-Optimization` `KernelBench` `Profiling` `Correctness-Harness`     |
 | [**DRTriton: Large-Scale Synthetic Data Driven Reinforcement Learning for Triton Kernel Generation**](https://arxiv.org/abs/2603.21465)                                                                                          |     arXiv      | 2026-03 |                                                     -                                                     |      Siqi Guo       |   Tianbao Yang     |                                                                                                                          Texas A&M University, Oracle                                                                                                                           |                    `Triton` `RL` `Synthetic-Data` `Kernel-Generation`                    |
 | [**KernelCraft: Benchmarking for Agentic Close-to-Metal Kernel Generation on Emerging Hardware**](https://arxiv.org/abs/2603.08721)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Jiayi Nie      |    Yiren Zhao      |                                                                                                                                    University of Cambridge, Imperial College London, AMD, University of Edinburgh                                                                                                                                    |                    `Benchmark` `Agent` `Kernel-Generation` `Emerging-Hardware`                    |
 | [**StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning**](https://arxiv.org/abs/2603.02637)                                                                                                                              |     arXiv      | 2026-03 |                                                     -                                                     |      Shiyang Li      |    Caiwen Ding      |                                                                                                                                    Department of Computer Science & Engineering, University of Minnesota-Twin Cities, Minnesota, USA; Department of Electrical Engineering, University of Minnesota-Twin Cities, Minnesota, USA                                                                                                                                    |                    `CUDA` `Multi-Agent` `End-to-End` `RL` `KernelBench`                    |

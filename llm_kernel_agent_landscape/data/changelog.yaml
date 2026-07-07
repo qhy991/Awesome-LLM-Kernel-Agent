@@ -28,3 +28,6 @@
 - date: 2026-06-26
   version: v0.5.4
   summary: "Added SOLAR (NVIDIA) — LLM-powered speed-of-light performance analysis from PyTorch/JAX source."
+- date: 2026-07-07
+  version: v0.5.5
+  summary: "Enriched AutoKernel (RightNow AI) — autonomous agent-driven GPU kernel optimization for PyTorch models."
