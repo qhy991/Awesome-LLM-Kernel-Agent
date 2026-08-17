@@ -83,3 +83,9 @@ buckets:
       - id: davinci_kernel
       - id: automegakernel
       - id: musacoder
+
+  - date: "2026-08"
+    items:
+      - id: cake
+      - id: zomboss
+      - id: contract_grade_verifier

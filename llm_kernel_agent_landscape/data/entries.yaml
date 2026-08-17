@@ -1282,6 +1282,184 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: cake
+  name: CAKE
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Compiler-agent co-design
+  backends:
+  - CUDA
+  - CAKE IR
+  method_tags:
+  - compiler-agent-co-design
+  - hardware-explicit-scheduling
+  - evolving-harness
+  - verification
+  - blackwell
+  source: awesome_llm_kernel_agent
+  affiliation_short: CMU · NVIDIA
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.12629
+  notes: Co-designs a typed hardware-explicit schedule IR with verifier, cost-model, localized-diagnostic, and reusable-tactic evolution driven by recurring agent failures.
+- id: zomboss
+  name: Zomboss
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Compiler-mediated verified DSE
+  backends:
+  - Gemmini
+  - PLENA
+  method_tags:
+  - agent
+  - compiler-mediated
+  - verified-dse
+  - emerging-accelerators
+  source: awesome_llm_kernel_agent
+  affiliation_short: University of Michigan
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.00894
+  notes: Compiles workload-invariant machine semantics into a reusable mapping interface and confines neural search to verified workload-dependent decisions.
+- id: cutegen
+  name: CuTeGen
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: CuTe generate-test-refine
+  backends:
+  - CUDA
+  - CuTe
+  method_tags:
+  - agent
+  - cute
+  - delayed-profiling
+  - kernel-generation
+  source: awesome_llm_kernel_agent
+  affiliation_short: U of Toronto · Standard Kernel
+  display_priority: 2
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-04"
+  url: https://arxiv.org/abs/2604.01489
+  notes: Stabilizes high-level CuTe structure before enabling low-level profiling feedback in a staged generate-test-refine loop.
+- id: harness_engineering
+  name: Harness Engineering
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Evidence-backed harness and controller
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - harness
+  - profiling
+  - artifact-provenance
+  - blackwell
+  source: awesome_llm_kernel_agent
+  affiliation_short: Baidu
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-07"
+  url: https://arxiv.org/abs/2607.17979
+  notes: Separates an official-aligned evaluation harness from a profile-backed controller that makes bounded candidate-generation and promotion decisions.
+- id: atrex_kernel_agent
+  name: Atrex-Kernel-Agent
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Production trace-driven optimization
+  backends:
+  - Triton
+  - Gluon
+  - FlyDSL
+  - CuTeDSL
+  method_tags:
+  - agent
+  - roofline
+  - optimization-dropout
+  - production-traces
+  source: awesome_llm_kernel_agent
+  affiliation_short: ATREX · Alibaba
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-07"
+  url: https://arxiv.org/abs/2607.14541
+  notes: Combines production-trace weights, per-problem roofline ceilings, profile-driven measure-revise search, optimization dropout, and a layered knowledge base.
+- id: kernelgenbench
+  name: KernelGenBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Multi-source and multi-chip evaluation
+  backends:
+  - Triton
+  - Multi-chip
+  method_tags:
+  - benchmark
+  - multi-source
+  - portability
+  - token-cost
+  source: awesome_llm_kernel_agent
+  affiliation_short: CAS · PKU · BAAI
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-07"
+  url: https://arxiv.org/abs/2607.27231
+  notes: Evaluates 210 operators from three sources and a 110-operator subset across heterogeneous hardware, including portability and token-cost analysis.
+- id: kernelbench_verified
+  name: KernelBench-Verified
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Robust KernelBench evaluation
+  backends:
+  - CUDA
+  - NVIDIA
+  method_tags:
+  - benchmark
+  - tf32-baseline
+  - hidden-tests
+  - memory-efficiency
+  source: awesome_llm_kernel_agent
+  affiliation_short: Meta · Stanford
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-06"
+  url: https://arxiv.org/abs/2607.16241
+  notes: Adds a TF32-enabled baseline, four-distribution hidden correctness tests, and peak-memory metrics to expose reward hacking and speed-memory tradeoffs.
+- id: contract_grade_verifier
+  name: Contract-Grade Verifier
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Adversarial correctness verification
+  backends:
+  - CUDA
+  - Triton
+  method_tags:
+  - verification
+  - benchmark
+  - correctness
+  source: awesome_llm_kernel_agent
+  affiliation_short: E3A Healthcare
+  display_priority: 0
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.12700
+  notes: Twelve-gate verifier auditing 2,638 accepted LLM-generated kernels and certifying a native Blackwell GDN backward.
 - id: kernelowl
   name: KernelOwl
   year: 2026

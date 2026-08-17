@@ -31,3 +31,12 @@
 - date: 2026-07-07
   version: v0.5.5
   summary: "Enriched AutoKernel (RightNow AI) — autonomous agent-driven GPU kernel optimization for PyTorch models."
+- date: 2026-08-17
+  version: v0.5.6
+  summary: "Added Contract-Grade Verifier (E3A Healthcare) — twelve-gate correctness audit for LLM-generated GPU kernels."
+- date: 2026-08-17
+  version: v0.5.7
+  summary: "Added Zomboss, CuTeGen, Harness Engineering, Atrex-Kernel-Agent, KernelGenBench, and KernelBench-Verified with verified primary-source metadata."
+- date: 2026-08-17
+  version: v0.5.8
+  summary: "Added CAKE — compiler-agent co-design around a typed, hardware-explicit schedule IR with an evolving verifier, cost model, diagnostics, and optimization tactics."

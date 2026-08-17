@@ -7,8 +7,8 @@
 ### _A Curated Collection of LLM-Driven GPU Kernel Generation & Optimization Research_
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-100+-green.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
+[![Papers](https://img.shields.io/badge/Papers-108+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,8 +41,8 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 100+
-- **Latest Addition**: May 2026
+- **Total Papers**: 108+
+- **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
 
@@ -101,6 +101,9 @@ timeline
              : daVinci-kernel
              : AutoMegaKernel
              : MusaCoder
+    2026-08 : CAKE
+             : Zomboss
+             : Contract-Grade Verifier
 ```
 
 <!-- LANDSCAPE-TIMELINE-REPORT:END -->
@@ -188,6 +191,7 @@ timeline
              : ARGUS
              : AdaExplore
              : Kernel Contracts
+             : CuTeGen
     2026-05 : KEET
              : FastKernels
              : KernelBenchX
@@ -196,6 +200,13 @@ timeline
              : AutoMegaKernel
              : daVinci-kernel
              : SOLAR
+             : KernelBench-Verified
+    2026-07 : Harness Engineering
+             : Atrex-Kernel-Agent
+             : KernelGenBench
+    2026-08 : CAKE
+             : Zomboss
+             : Contract-Grade Verifier
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -224,13 +235,16 @@ flowchart TB
         tritonrl["TritonRL<br/><i>RL for Triton</i>"]
         ascendcraft["AscendCraft<br/><i>DSL-guided transcompilation</i>"]
         ascend_kernelgen["AscendKernelGen<br/><i>NPU adaptation</i>"]
+        cake["CAKE<br/><i>Compiler-agent co-design</i>"]
         cuda_agent["CUDA Agent<br/><i>Large-scale agentic RL</i>"]
+        cutegen["CuTeGen<br/><i>CuTe generate-test-refine</i>"]
         drtriton["DRTriton<br/><i>Synthetic-data RL</i>"]
         dr_kernel["Dr. Kernel<br/><i>Triton RL</i>"]
         incoder32b["InCoder-32B<br/><i>Industrial code LLM</i>"]
         kernelllm["KernelLLM<br/><i>Kernel-specialized LLM</i>"]
         maxcode["MaxCode<br/><i>Max-reward RL</i>"]
         musacoder["MusaCoder<br/><i>Full-stack CUDA/MUSA RL</i>"]
+        zomboss["Zomboss<br/><i>Compiler-mediated verified DSE</i>"]
     end
     subgraph agent4kernel["Agentic Workflow"]
         direction TB
@@ -250,10 +264,12 @@ flowchart TB
         cupilot["cuPilot<br/><i>Strategy-coordinated evolution</i>"]
         argus["ARGUS<br/><i>Data-flow invariants</i>"]
         adaexplore["AdaExplore<br/><i>Failure-driven search</i>"]
+        atrex_kernel_agent["Atrex-Kernel-Agent<br/><i>Production trace-driven optimization</i>"]
         autokernel["AutoKernel<br/><i>Iterative agent-driven search</i>"]
         automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
+        harness_engineering["Harness Engineering<br/><i>Evidence-backed harness and controller</i>"]
         k_search["K-Search<br/><i>Co-evolving world model</i>"]
         keet["KEET<br/><i>Profiling explanation</i>"]
         kernel_contracts["Kernel Contracts<br/><i>Correctness specification</i>"]
@@ -289,10 +305,13 @@ flowchart TB
         npueval["NPUEval<br/><i>NPU kernel eval</i>"]
         tritonbench["TritonBench<br/><i>Triton operators</i>"]
         cudabench["CUDABench<br/><i>Text-to-CUDA</i>"]
+        contract_grade_verifier["Contract-Grade Verifier<br/><i>Adversarial correctness verification</i>"]
         fastkernels["FastKernels<br/><i>Production inference alignment</i>"]
         flashinfer_bench["FlashInfer-Bench<br/><i>Inference virtuous cycle</i>"]
+        kernelbench_verified["KernelBench-Verified<br/><i>Robust KernelBench evaluation</i>"]
         kernelbenchx["KernelBenchX<br/><i>Failure analysis</i>"]
         kernelcraft["KernelCraft<br/><i>Emerging hardware</i>"]
+        kernelgenbench["KernelGenBench<br/><i>Multi-source and multi-chip evaluation</i>"]
         rooflinebench["RooflineBench<br/><i>Roofline analysis</i>"]
         sol_execbench["SOL-ExecBench<br/><i>Speed-of-light</i>"]
     end
@@ -338,10 +357,12 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (66 papers)</b></summary>
+<summary><b>📋 View All Methods (69 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution**](https://arxiv.org/abs/2608.12629) | arXiv | 2026-08 | - | Zihao Ye | Luis Ceze | Carnegie Mellon University; NVIDIA | `Compiler-Agent-Co-Design` `CAKE-IR` `Hardware-Explicit-Scheduling` `Evolving-Harness` `Verification` `Blackwell` |
+| [**Rethinking Agentic Kernel Generation for Emerging Accelerators**](https://arxiv.org/abs/2608.00894) | arXiv | 2026-08 | - | Ruijie Gao | Nathan Bleier | University of Michigan EECS | `Agent` `Emerging-Accelerators` `Compiler-Mediated` `Verified-DSE` `Gemmini` `PLENA` |
 | [**SOLAR: AI-Powered Speed-of-Light Performance Analysis**](https://arxiv.org/abs/2606.26383)                                                                                                                                  |     arXiv      | 2026-06 |                           [GitHub](https://github.com/NVlabs/SOLAR)                           |    Qijing Huang     | Christos Kozyrakis |                                                                                                                                 NVIDIA                                                                                                                                 |     `CUDA` `SOL` `Speed-of-Light` `LLM` `KernelBench` `Performance-Analysis` `Agent`     |
 | [**daVinci-kernel: Co-Evolving Skill Selection, Summarization, and Utilization via RL for GPU Kernel Optimization**](https://arxiv.org/abs/2606.16497)                                                                          |     arXiv      | 2026-06 |                                                     -                                                     |     Dayuan Fu       |    Jinlong Hou     |                                                                                                                                    SII; SJTU GAIR                                                                                                                                    |     `CUDA` `Triton` `RL` `Multi-Agent` `Skill-Library` `KernelBench` `SFT`     |
 | [**AutoMegaKernel: A Statically-Checked Agent Harness for Self-Retargeting Megakernel Synthesis**](https://arxiv.org/abs/2606.09682)                                                                                            |     arXiv      | 2026-06 |                           [GitHub](https://github.com/RightNow-AI/AutoMegaKernel)                           |     Jaber Jaber     |    Osama Jaber     |                                                                                                                                 RightNow AI                                                                                                                                 |     `CUDA` `Agent` `Megakernel` `LLM-Inference` `Static-Verification` `Self-Retargeting`     |
@@ -349,6 +370,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 | [**Xe-Forge: Multi-Stage LLM-Powered Kernel Optimization for Intel GPU**](https://arxiv.org/abs/2605.26118)                                                                                                                      |     arXiv      | 2026-05 |                                                     -                                                     |  Marcin Spoczynski  | Alexander Heinecke |                                                                                                                                 Intel Corporation                                                                                                                                 |              `Intel-GPU` `Agent` `Multi-Stage` `Kernel-Optimization`              |
 | [**KEET: Explaining Performance of GPU Kernels Using LLM Agents**](https://arxiv.org/abs/2605.04467)                                                                                                                              |     arXiv      | 2026-05 |                                                     -                                                     |   Joshua H. Davis   |  Abhinav Bhatele   |                                                                 Department of Computer Science, University of Maryland, College Park, MD, USA; NVIDIA, Inc., Santa Clara, CA, USA                                                                 |           `CUDA` `LLM-Agent` `Nsight-Compute` `Performance-Analysis` `Profiling`            |
 | [**FACT: Compositional Kernel Synthesis with a Three-Stage Agentic Workflow**](https://arxiv.org/abs/2604.26666)                                                                                                                  |     arXiv      | 2026-04 |                                                     -                                                     |    Sina Heidari     | Dimitrios S. Nikolopoulos |                                                                                                                          Virginia Tech, Blacksburg, Virginia, USA                                                                                                                           |              `CUTLASS` `Agent` `Auto-Tuning` `Multi-Pattern` `KernelBench`              |
+| [**CuTeGen: An LLM-Based Agentic Framework for Generation and Optimization of High-Performance GPU Kernels using CuTe**](https://arxiv.org/abs/2604.01489) | arXiv | 2026-04 | [GitHub](https://github.com/taratt/cutegen) | Tara Saba | Fan Long | University of Toronto; Standard Kernel | `CuTe` `CUDA` `Agent` `Generate-Test-Refine` `Delayed-Profiling` `KernelBench` |
 | [**ARGUS: Agentic GPU Optimization Guided by Data-Flow Invariants**](https://arxiv.org/abs/2604.18616)                                                                                                                          |     arXiv      | 2026-04 |                                                     -                                                     |     Haohui Mai      |    Binhang Yuan    |                                                                 CausalFlow Inc.; HKUST; Tsinghua University; Stanford University; UCAS; UC Riverside                                                                 |           `CUDA` `Agent` `Data-Flow` `GEMM` `Attention` `MoE` `AMD`            |
 | [**Kernel Contracts: A Specification Language for ML Kernel Correctness Across Heterogeneous Silicon**](https://arxiv.org/abs/2604.22032)                                                                                        |     arXiv      | 2026-04 |                                                     -                                                     |    Cooper Veit      |    Cooper Veit     |                                                                                                                                 Ashiba Research                                                                                                                                 |           `Verification` `Specification` `Correctness` `Cross-Platform` `CUDA` `NPU`            |
 | ![Star](https://img.shields.io/github/stars/StigLidu/AdaExplore.svg?style=social&label=Star) [**AdaExplore: Failure-Driven Adaptation and Diversity-Preserving Search for Efficient Kernel Generation**](https://arxiv.org/abs/2604.16625) |     arXiv      | 2026-04 |                           [GitHub](https://github.com/StigLidu/AdaExplore)                           |     Weihua Du       |    Sean Welleck    |                                                                 Carnegie Mellon University; University of Washington; Arm Ltd.                                                                 |        `Triton` `Agent` `Failure-Driven` `Diversity-Preserving-Search` `KernelBench`        |
@@ -416,6 +438,8 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | Title                                                                                                             | Venue |  Date   |                     Code                      |   First Author    |                                        Affiliation                                        |                   Topics                    |
 | :---------------------------------------------------------------------------------------------------------------- | :---: | :-----: | :-------------------------------------------: | :---------------: | :---------------------------------------------------------------------------------------: | :-----------------------------------------: |
+| [**Harness Engineering for LLM-Driven GPU Kernel Generation**](https://arxiv.org/abs/2607.17979) | arXiv | 2026-07 | [GitHub](https://github.com/syhya/mlsys26-flashinfer-contest) | Yue Shui | Baidu, Inc. | `CUDA` `Triton` `Harness` `Profile-Backed-Controller` `Artifact-Provenance` `Blackwell` |
+| [**Are LLM-Generated GPU Kernels Production-Ready? A Trace-Driven Benchmark and Optimization Agent**](https://arxiv.org/abs/2607.14541) | arXiv | 2026-07 | [Bench](https://github.com/alibaba/atrex-bench) · [Agent](https://github.com/alibaba/atrex-kernel-agent) | Lingyun Yang | ATREX Team, Alibaba Group | `Agent` `Production-Traces` `Roofline` `Optimization-Dropout` `Knowledge-Base` |
 | [**Using GUI Agent for Electronic Design Automation**](https://arxiv.org/pdf/2512.11611)                          | arXiv | 2025-12 | [GitHub](https://github.com/aiben-ch/GUI-EDA) |     Chunyi Li     | Nanyang Technological University / Shanghai Jiao Tong University / Shanghai AI Laboratory |    `GUI-Agent` `EDA` `CAD` `Multimodal`     |
 | [**OS-R1: Agentic Operating System Kernel Tuning with Reinforcement Learning**](https://arxiv.org/abs/2508.12551) | arXiv | 2025-08 |                       -                       |    Hongyu Lin     |                                             -                                             |          `OS-Kernel` `RL` `Agent`           |
 | [**GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning**](https://arxiv.org/abs/2507.19457)   | arXiv | 2025-07 |                       -                       | Lakshya A Agrawal |                                             -                                             | `Prompt-Engineering` `Reflective-Evolution` |
@@ -429,6 +453,9 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | Title                                                                                                                                                                                                                                                                                |    Venue    |  Date   |                                                          Code                                                           |          First Author          |          Last Author          |                                        Affiliation                                        |             Platforms              |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation**](https://arxiv.org/abs/2607.27231) | arXiv | 2026-07 | [GitHub](https://github.com/flagos-ai/KernelGenBench) | Peiyu Zang | Yonghua Lin | Institute of Automation, CAS; Peking University; BAAI; BNU; BJTU | `Triton` `Benchmark` `Multi-Source` `Multi-Chip` `Portability` `Token-Cost` |
+| [**KernelBench-Verified: Do LLM-Generated Kernels Actually Beat PyTorch?**](https://arxiv.org/abs/2607.16241) | arXiv | 2026-06 | [GitHub](https://github.com/facebookresearch/kernel_bench_verified) | Yunxiang Zhang | Will Su | Meta; FAIR at Meta Superintelligence Lab; Stanford University | `CUDA` `KernelBench` `TF32-Baseline` `Hidden-Tests` `Memory-Efficiency` `Reward-Hacking` |
+| [**A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family**](https://arxiv.org/abs/2608.12700) | arXiv | 2026-08 | [Zenodo](https://doi.org/10.5281/zenodo.21563213) | Rishi Shah | Rishav Shrestha | E3A Healthcare | `CUDA` `Triton` `Blackwell` `Verification` `Benchmark` `KernelBench` `Correctness-Contracts` `GDN` |
 | [**FastKernels: Benchmarking GPU Kernel Generation in Production**](https://arxiv.org/abs/2605.23215)                                                                                                                                                              |    arXiv    | 2026-05 |                                                            -                                                            |   Gabriele Oliaro   | Samyam Rajbhandari |                                                                 Snowflake AI Research, CMU, UCSD, Independent Researcher                                                                 |     `CUDA` `Benchmark` `Production-Inference` `Framework-Aligned`     |
 | [**KernelBenchX: A Comprehensive Benchmark for Evaluating LLM-Generated GPU Kernels**](https://arxiv.org/abs/2605.04956)                                                                                                                                           |    arXiv    | 2026-05 |                                                            -                                                            |      Han Wang       |      Jun Zhu       |                                                                                                                                          -                                                                                                                                          |     `CUDA` `Benchmark` `Failure-Analysis` `Kernel-Generation` `Evaluation`     |
 | [**SOL-ExecBench: Speed-of-Light Benchmarking for Real-World GPU Kernels Against Hardware Limits**](https://arxiv.org/abs/2603.19173)                                                                                                                                                            |    arXiv    | 2026-03 |                                                            -                                                            |          Edward Lin            |         Humphrey Shi          |                                           NVIDIA                                            |     `CUDA` `Benchmark` `SOL` `Hardware-Limits`     |
@@ -550,6 +577,6 @@ This work is licensed under a [Creative Commons Zero v1.0 Universal](LICENSE) li
 
 Maintained with ❤️ by the community
 
-_Last Updated: May 2026_
+_Last Updated: August 2026_
 
 </div>

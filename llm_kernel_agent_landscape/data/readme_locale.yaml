@@ -51,8 +51,8 @@ zh:
     - "**学生**：学习 AI 与计算机体系结构的交叉领域"
   stats_title: "仓库统计"
   stats:
-    - "**论文总数**：100+"
-    - "**最近更新**：2026 年 5 月"
+    - "**论文总数**：108+"
+    - "**最近更新**：2026 年 8 月"
     - "**覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU"
     - "**主要方法**：Agent、RL、微调、RAG、Prompt Engineering"
   landscape_title: "全景图"
@@ -73,7 +73,7 @@ zh:
   papers_title: "研究论文"
   methods_title: "基于 LLM 的内核生成方法"
   methods_desc: "本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。"
-  methods_summary: "查看全部方法（66 篇）"
+  methods_summary: "查看全部方法（69 篇）"
   agent_title: "智能体方法论与技术"
   agent_desc: "适用于内核生成与系统优化的通用智能体与推理技术。"
   benchmarks_title: "数据集与基准"
@@ -104,7 +104,7 @@ zh:
   license_text: "本项目采用 [Creative Commons Zero v1.0 Universal](LICENSE) 许可证。"
   footer_star: "**⭐ 若觉得本仓库有帮助，欢迎 Star！⭐**"
   footer_maintained: "由社区维护"
-  footer_updated: "最后更新：2026 年 5 月"
+  footer_updated: "最后更新：2026 年 8 月"
   table_headers:
     methods: ["标题", "发表 venue", "日期", "代码", "第一作者", "末位作者", "单位", "主题"]
     agent: ["标题", "发表 venue", "日期", "代码", "第一作者", "单位", "主题"]
