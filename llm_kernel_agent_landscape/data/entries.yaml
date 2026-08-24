@@ -1395,6 +1395,30 @@
   timeline_date: "2026-07"
   url: https://arxiv.org/abs/2607.14541
   notes: Combines production-trace weights, per-problem roofline ceilings, profile-driven measure-revise search, optimization dropout, and a layered knowledge base.
+- id: ptxbench
+  name: PTXBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Architecture-specific PTX evaluation and adaptation
+  backends:
+  - CUDA
+  - PTX
+  method_tags:
+  - benchmark
+  - architecture-specific-ptx
+  - target-instruction-execution
+  - supervised-fine-tuning
+  - hopper
+  - blackwell
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford · CMU · RadixArk
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.17379
+  notes: Evaluates correctness, runtime execution of required architecture-specific PTX instructions, and speedup over frontier libraries on H100 and B200, then studies repair-conditioned SFT.
 - id: kernelgenbench
   name: KernelGenBench
   year: 2026

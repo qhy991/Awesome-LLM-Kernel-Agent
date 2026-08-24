@@ -40,3 +40,6 @@
 - date: 2026-08-17
   version: v0.5.8
   summary: "Added CAKE — compiler-agent co-design around a typed, hardware-explicit schedule IR with an evolving verifier, cost model, diagnostics, and optimization tactics."
+- date: 2026-08-24
+  version: v0.5.9
+  summary: "Added PTXBench — architecture-specific CUDA/PTX evaluation and repair-conditioned model adaptation on H100 and B200."

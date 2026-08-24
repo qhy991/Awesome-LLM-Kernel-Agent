@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-108+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-109+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：108+
+- **论文总数**：109+
 - **最近更新**：2026 年 8 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -206,6 +206,7 @@ timeline
              : KernelGenBench
     2026-08 : CAKE
              : Zomboss
+             : PTXBench
              : Contract-Grade Verifier
 ```
 
@@ -312,6 +313,7 @@ flowchart TB
         kernelbenchx["KernelBenchX<br/><i>Failure analysis</i>"]
         kernelcraft["KernelCraft<br/><i>Emerging hardware</i>"]
         kernelgenbench["KernelGenBench<br/><i>Multi-source and multi-chip evaluation</i>"]
+        ptxbench["PTXBench<br/><i>Architecture-specific PTX evaluation and adaptation</i>"]
         rooflinebench["RooflineBench<br/><i>Roofline analysis</i>"]
         sol_execbench["SOL-ExecBench<br/><i>Speed-of-light</i>"]
     end
@@ -454,6 +456,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 平台 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX**](https://arxiv.org/abs/2608.17379) | arXiv | 2026-08 | [GitHub](https://github.com/zhang677/PTXBench) | Genghan Zhang | Kunle Olukotun | Stanford University; Carnegie Mellon University; RadixArk; Independent Researchers | `CUDA` `PTX` `Benchmark` `H100` `B200` `Target-Instruction-Execution` `SFT` |
 | [**KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation**](https://arxiv.org/abs/2607.27231) | arXiv | 2026-07 | [GitHub](https://github.com/flagos-ai/KernelGenBench) | Peiyu Zang | Yonghua Lin | Institute of Automation, CAS; Peking University; BAAI; BNU; BJTU | `Triton` `Benchmark` `Multi-Source` `Multi-Chip` `Portability` `Token-Cost` |
 | [**KernelBench-Verified: Do LLM-Generated Kernels Actually Beat PyTorch?**](https://arxiv.org/abs/2607.16241) | arXiv | 2026-06 | [GitHub](https://github.com/facebookresearch/kernel_bench_verified) | Yunxiang Zhang | Will Su | Meta; FAIR at Meta Superintelligence Lab; Stanford University | `CUDA` `KernelBench` `TF32-Baseline` `Hidden-Tests` `Memory-Efficiency` `Reward-Hacking` |
 | [**A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family**](https://arxiv.org/abs/2608.12700) | arXiv | 2026-08 | [Zenodo](https://doi.org/10.5281/zenodo.21563213) | Rishi Shah | Rishav Shrestha | E3A Healthcare | `CUDA` `Triton` `Blackwell` `Verification` `Benchmark` `KernelBench` `Correctness-Contracts` `GDN` |
