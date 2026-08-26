@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-109+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-110+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：109+
+- **论文总数**：110+
 - **最近更新**：2026 年 8 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -204,7 +204,8 @@ timeline
     2026-07 : Harness Engineering
              : Atrex-Kernel-Agent
              : KernelGenBench
-    2026-08 : CAKE
+    2026-08 : AsmEvo
+             : CAKE
              : Zomboss
              : PTXBench
              : Contract-Grade Verifier
@@ -236,6 +237,7 @@ flowchart TB
         tritonrl["TritonRL<br/><i>RL for Triton</i>"]
         ascendcraft["AscendCraft<br/><i>DSL-guided transcompilation</i>"]
         ascend_kernelgen["AscendKernelGen<br/><i>NPU adaptation</i>"]
+        asmevo["AsmEvo<br/><i>Verified assembly-level optimization</i>"]
         cake["CAKE<br/><i>Compiler-agent co-design</i>"]
         cuda_agent["CUDA Agent<br/><i>Large-scale agentic RL</i>"]
         cutegen["CuTeGen<br/><i>CuTe generate-test-refine</i>"]
@@ -360,10 +362,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（69 篇）</b></summary>
+<summary><b>📋 查看全部方法（70 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification**](https://arxiv.org/abs/2608.20711) | arXiv | 2026-08 | - | Ji Liu | Emad Barsoum | AMD; Southern University of Science and Technology | `AMD-GPU` `AMDGCN` `Assembly-Optimization` `Agent` `Binary-Rewriting` `Functional-Equivalence` `MI300X` `MI308X` |
 | [**CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution**](https://arxiv.org/abs/2608.12629) | arXiv | 2026-08 | - | Zihao Ye | Luis Ceze | Carnegie Mellon University; NVIDIA | `Compiler-Agent-Co-Design` `CAKE-IR` `Hardware-Explicit-Scheduling` `Evolving-Harness` `Verification` `Blackwell` |
 | [**Rethinking Agentic Kernel Generation for Emerging Accelerators**](https://arxiv.org/abs/2608.00894) | arXiv | 2026-08 | - | Ruijie Gao | Nathan Bleier | University of Michigan EECS | `Agent` `Emerging-Accelerators` `Compiler-Mediated` `Verified-DSE` `Gemmini` `PLENA` |
 | [**SOLAR: AI-Powered Speed-of-Light Performance Analysis**](https://arxiv.org/abs/2606.26383)                                                                                                                                  |     arXiv      | 2026-06 |                           [GitHub](https://github.com/NVlabs/SOLAR)                           |    Qijing Huang     | Christos Kozyrakis |                                                                                                                                 NVIDIA                                                                                                                                 |     `CUDA` `SOL` `Speed-of-Light` `LLM` `KernelBench` `Performance-Analysis` `Agent`     |

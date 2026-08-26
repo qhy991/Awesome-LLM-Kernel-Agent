@@ -43,3 +43,6 @@
 - date: 2026-08-24
   version: v0.5.9
   summary: "Added PTXBench — architecture-specific CUDA/PTX evaluation and repair-conditioned model adaptation on H100 and B200."
+- date: 2026-08-26
+  version: v0.5.10
+  summary: "Added AsmEvo — correctness-gated agentic assembly optimization for source-free AMDGPU code objects."

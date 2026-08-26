@@ -1282,6 +1282,29 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: asmevo
+  name: AsmEvo
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Verified assembly-level optimization
+  backends:
+  - AMDGPU
+  - AMDGCN
+  method_tags:
+  - agent
+  - assembly-optimization
+  - binary-rewriting
+  - functional-equivalence
+  - abi-preservation
+  source: awesome_llm_kernel_agent
+  affiliation_short: AMD · SUSTech
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.20711
+  notes: Recovers and edits AMDGCN assembly from source-free AMDGPU code objects, then admits only ABI-preserving candidates that pass differential equivalence against the original binary before timing.
 - id: cake
   name: CAKE
   year: 2026
