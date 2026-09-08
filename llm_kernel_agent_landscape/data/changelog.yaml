@@ -46,3 +46,6 @@
 - date: 2026-08-26
   version: v0.5.10
   summary: "Added AsmEvo — correctness-gated agentic assembly optimization for source-free AMDGPU code objects."
+- date: 2026-09-08
+  version: v0.5.11
+  summary: "Added CUDA-Harness for verified Text2CUDA evolution and MaxKernel for multi-agent TPU/Pallas kernel generation."

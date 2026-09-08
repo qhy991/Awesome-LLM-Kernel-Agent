@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-110+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-112+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：110+
+- **论文总数**：112+
 - **最近更新**：2026 年 8 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -204,11 +204,13 @@ timeline
     2026-07 : Harness Engineering
              : Atrex-Kernel-Agent
              : KernelGenBench
-    2026-08 : AsmEvo
+    2026-08 : CUDA-Harness
+             : AsmEvo
              : CAKE
              : Zomboss
              : PTXBench
              : Contract-Grade Verifier
+    2026-09 : MaxKernel
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -240,12 +242,14 @@ flowchart TB
         asmevo["AsmEvo<br/><i>Verified assembly-level optimization</i>"]
         cake["CAKE<br/><i>Compiler-agent co-design</i>"]
         cuda_agent["CUDA Agent<br/><i>Large-scale agentic RL</i>"]
+        cuda_harness["CUDA-Harness<br/><i>Verified Text2CUDA generation and evolution</i>"]
         cutegen["CuTeGen<br/><i>CuTe generate-test-refine</i>"]
         drtriton["DRTriton<br/><i>Synthetic-data RL</i>"]
         dr_kernel["Dr. Kernel<br/><i>Triton RL</i>"]
         incoder32b["InCoder-32B<br/><i>Industrial code LLM</i>"]
         kernelllm["KernelLLM<br/><i>Kernel-specialized LLM</i>"]
         maxcode["MaxCode<br/><i>Max-reward RL</i>"]
+        maxkernel["MaxKernel<br/><i>Multi-agent TPU kernel generation</i>"]
         musacoder["MusaCoder<br/><i>Full-stack CUDA/MUSA RL</i>"]
         zomboss["Zomboss<br/><i>Compiler-mediated verified DSE</i>"]
     end
@@ -362,10 +366,12 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（70 篇）</b></summary>
+<summary><b>📋 查看全部方法（72 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**MaxKernel: Agentic Kernel Generation for TPUs**](https://arxiv.org/abs/2609.04523) | arXiv | 2026-09 | [GitHub](https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel) | Shangkun Wang | Sethu Sankaran | Google Cloud AI Infrastructure | `TPU` `Pallas` `JAX` `Multi-Agent` `Human-in-the-Loop` `Autonomous-Search` `JaxBench` |
+| [**CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language**](https://arxiv.org/abs/2609.00058) | arXiv | 2026-08 | - | Qi Fan | Yehan Ma | Shanghai Jiao Tong University | `CUDA` `Text2CUDA` `Agent` `Intermediate-Structured-Generation` `Synthesis-Based-Verification` `Feedback-Adaptive-Evolution` |
 | [**AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification**](https://arxiv.org/abs/2608.20711) | arXiv | 2026-08 | - | Ji Liu | Emad Barsoum | AMD; Southern University of Science and Technology | `AMD-GPU` `AMDGCN` `Assembly-Optimization` `Agent` `Binary-Rewriting` `Functional-Equivalence` `MI300X` `MI308X` |
 | [**CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution**](https://arxiv.org/abs/2608.12629) | arXiv | 2026-08 | - | Zihao Ye | Luis Ceze | Carnegie Mellon University; NVIDIA | `Compiler-Agent-Co-Design` `CAKE-IR` `Hardware-Explicit-Scheduling` `Evolving-Harness` `Verification` `Blackwell` |
 | [**Rethinking Agentic Kernel Generation for Emerging Accelerators**](https://arxiv.org/abs/2608.00894) | arXiv | 2026-08 | - | Ruijie Gao | Nathan Bleier | University of Michigan EECS | `Agent` `Emerging-Accelerators` `Compiler-Mediated` `Verified-DSE` `Gemmini` `PLENA` |

@@ -1282,6 +1282,51 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: maxkernel
+  name: MaxKernel
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Multi-agent TPU kernel generation
+  backends:
+  - TPU
+  - Pallas
+  - JAX
+  method_tags:
+  - multi-agent
+  - human-in-the-loop
+  - autonomous-search
+  - profiling
+  source: awesome_llm_kernel_agent
+  affiliation_short: Google Cloud
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.04523
+  notes: Shares planning, implementation, debugging, testing, and profiling sub-agents across human-in-the-loop, autonomous, and graph-based TPU kernel search modes.
+- id: cuda_harness
+  name: CUDA-Harness
+  year: 2026
+  period: 2026+
+  category: LLM4Kernel
+  subcategory: Verified Text2CUDA generation and evolution
+  backends:
+  - CUDA
+  method_tags:
+  - agent
+  - text2cuda
+  - intermediate-structured-generation
+  - synthesis-based-verification
+  - feedback-adaptive-evolution
+  source: awesome_llm_kernel_agent
+  affiliation_short: SJTU
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2609.00058
+  notes: Converts natural-language intent through a kernel manifest and standalone CUDA scaffold, isolates synthesized tests from generation, and applies correctness-first performance evolution.
 - id: asmevo
   name: AsmEvo
   year: 2026
