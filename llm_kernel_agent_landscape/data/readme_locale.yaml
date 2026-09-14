@@ -51,7 +51,7 @@ zh:
     - "**学生**：学习 AI 与计算机体系结构的交叉领域"
   stats_title: "仓库统计"
   stats:
-    - "**论文总数**：112+"
+    - "**论文总数**：113+"
     - "**最近更新**：2026 年 8 月"
     - "**覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU"
     - "**主要方法**：Agent、RL、微调、RAG、Prompt Engineering"

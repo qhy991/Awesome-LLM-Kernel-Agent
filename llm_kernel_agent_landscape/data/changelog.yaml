@@ -49,3 +49,6 @@
 - date: 2026-09-08
   version: v0.5.11
   summary: "Added CUDA-Harness for verified Text2CUDA evolution and MaxKernel for multi-agent TPU/Pallas kernel generation."
+- date: 2026-09-14
+  version: v0.5.12
+  summary: "Added MonoMoE — a persistent fused megakernel for quantized MoE decoding on H200."

@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-112+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-113+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 112+
+- **Total Papers**: 113+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -493,6 +493,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | Title                                                                                                                                                                                                |  Date   |                                  Topics & Resources                                   |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----: | :-----------------------------------------------------------------------------------: |
+| [**MonoMoE: An Efficient Fused Mega-kernel for Quantized MoE Decoding**](https://arxiv.org/abs/2609.04244) | 2026-08 | `CUDA` `H200` `Quantized-MoE` `Persistent-Megakernel` `vLLM` • [GitHub](https://github.com/flashinfer-ai/flashinfer/tree/main/csrc/fused_moe/monomoe) |
 | [**Evaluating CUDA Tile for AI Workloads on Hopper and Blackwell GPUs**](https://arxiv.org/abs/2604.23466)                                                                                          | 2026-04 | `First Author: Divakar Kumar Yadav` `Corresponding Author: Deepak Kumar` `University of Wisconsin-Milwaukee` `Illinois Institute of Technology` |
 | [**Execution-Centric Characterization of FP8 Matrix Cores, Asynchronous Execution, and Structured Sparsity on AMD MI300A**](https://arxiv.org/abs/2602.10262)                                      | 2026-02 |                    `AMD-GPU` `MI300A` `FP8` `Asynchronous-Execution` `Structured-Sparsity`                    |
 | [**Fast and Fusiest: An Optimal Fusion-Aware Mapper for Accelerator Modeling and Evaluation**](https://arxiv.org/abs/2602.15166)                                                                  | 2026-02 |                    `Accelerator-Modeling` `Fusion` `Mapper` `Optimization`                    |
