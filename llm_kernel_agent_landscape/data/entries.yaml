@@ -1463,6 +1463,51 @@
   timeline_date: "2026-07"
   url: https://arxiv.org/abs/2607.14541
   notes: Combines production-trace weights, per-problem roofline ceilings, profile-driven measure-revise search, optimization dropout, and a layered knowledge base.
+- id: inferencebench
+  name: InferenceBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Open-ended inference-serving optimization
+  backends:
+  - H100
+  - vLLM
+  - SGLang
+  method_tags:
+  - benchmark
+  - coding-agent
+  - inference-serving
+  - open-ended-optimization
+  source: awesome_llm_kernel_agent
+  affiliation_short: AISA
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-07"
+  url: https://arxiv.org/abs/2607.20468
+  notes: Gives agents one H100 and two hours to deploy and optimize an OpenAI-compatible server across prefill, decode, throughput, and balanced scenarios with quality and integrity gates.
+- id: iso_bench
+  name: ISO-Bench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Real-world inference optimization patches
+  backends:
+  - vLLM
+  - SGLang
+  method_tags:
+  - benchmark
+  - coding-agent
+  - inference-optimization
+  - performance-patches
+  source: awesome_llm_kernel_agent
+  affiliation_short: Lossfunk
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-02"
+  url: https://arxiv.org/abs/2602.19594
+  notes: Evaluates coding agents on 54 optimization tasks mined from performance-improving vLLM and SGLang pull requests using complementary execution and intent metrics.
 - id: ptxbench
   name: PTXBench
   year: 2026

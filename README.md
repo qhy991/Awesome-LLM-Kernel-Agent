@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-113+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-115+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 113+
+- **Total Papers**: 115+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -173,6 +173,7 @@ timeline
              : K-Search
              : RooflineBench
              : OptiML
+             : ISO-Bench
     2026-03 : InCoder-32B
              : KernelSkill
              : StitchCUDA
@@ -203,6 +204,7 @@ timeline
              : KernelBench-Verified
     2026-07 : Harness Engineering
              : Atrex-Kernel-Agent
+             : InferenceBench
              : KernelGenBench
     2026-08 : CUDA-Harness
              : AsmEvo
@@ -315,6 +317,8 @@ flowchart TB
         contract_grade_verifier["Contract-Grade Verifier<br/><i>Adversarial correctness verification</i>"]
         fastkernels["FastKernels<br/><i>Production inference alignment</i>"]
         flashinfer_bench["FlashInfer-Bench<br/><i>Inference virtuous cycle</i>"]
+        iso_bench["ISO-Bench<br/><i>Real-world inference optimization patches</i>"]
+        inferencebench["InferenceBench<br/><i>Open-ended inference-serving optimization</i>"]
         kernelbench_verified["KernelBench-Verified<br/><i>Robust KernelBench evaluation</i>"]
         kernelbenchx["KernelBenchX<br/><i>Failure analysis</i>"]
         kernelcraft["KernelCraft<br/><i>Emerging hardware</i>"]
@@ -464,6 +468,8 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | Title                                                                                                                                                                                                                                                                                |    Venue    |  Date   |                                                          Code                                                           |          First Author          |          Last Author          |                                        Affiliation                                        |             Platforms              |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents**](https://arxiv.org/abs/2607.20468) | arXiv | 2026-07 | [GitHub](https://github.com/aisa-group/InferenceBench) | Jehyeok Yeon | Maksym Andriushchenko | AISA | `H100` `vLLM` `SGLang` `Inference-Serving` `Agent-Benchmark` `Open-Ended-Optimization` |
+| [**ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?**](https://arxiv.org/abs/2602.19594) | arXiv | 2026-02 | [GitHub](https://github.com/ISO-Bench/ISO-Bench) | Ayush Nangia | Paras Chopra | Lossfunk | `vLLM` `SGLang` `Coding-Agent` `Inference-Optimization` `Performance-Patches` `Benchmark` |
 | [**PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX**](https://arxiv.org/abs/2608.17379) | arXiv | 2026-08 | [GitHub](https://github.com/zhang677/PTXBench) | Genghan Zhang | Kunle Olukotun | Stanford University; Carnegie Mellon University; RadixArk; Independent Researchers | `CUDA` `PTX` `Benchmark` `H100` `B200` `Target-Instruction-Execution` `SFT` |
 | [**KernelGenBench: A Multi-Source and Multi-Chip Benchmark for LLM-based Kernel Generation**](https://arxiv.org/abs/2607.27231) | arXiv | 2026-07 | [GitHub](https://github.com/flagos-ai/KernelGenBench) | Peiyu Zang | Yonghua Lin | Institute of Automation, CAS; Peking University; BAAI; BNU; BJTU | `Triton` `Benchmark` `Multi-Source` `Multi-Chip` `Portability` `Token-Cost` |
 | [**KernelBench-Verified: Do LLM-Generated Kernels Actually Beat PyTorch?**](https://arxiv.org/abs/2607.16241) | arXiv | 2026-06 | [GitHub](https://github.com/facebookresearch/kernel_bench_verified) | Yunxiang Zhang | Will Su | Meta; FAIR at Meta Superintelligence Lab; Stanford University | `CUDA` `KernelBench` `TF32-Baseline` `Hidden-Tests` `Memory-Efficiency` `Reward-Hacking` |
