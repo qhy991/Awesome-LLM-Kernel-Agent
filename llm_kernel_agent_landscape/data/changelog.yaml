@@ -55,3 +55,6 @@
 - date: 2026-09-15
   version: v0.5.13
   summary: "Added ISO-Bench and InferenceBench for real-world and open-ended agentic inference optimization evaluation."
+- date: 2026-09-16
+  version: v0.5.14
+  summary: "Added ForgeMegakernel — milestone-guided agentic decode-megakernel generation with an independent mid-state oracle."

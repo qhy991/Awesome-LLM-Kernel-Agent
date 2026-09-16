@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-115+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-116+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 115+
+- **Total Papers**: 116+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -212,7 +212,8 @@ timeline
              : Zomboss
              : PTXBench
              : Contract-Grade Verifier
-    2026-09 : MaxKernel
+    2026-09 : ForgeMegakernel
+             : MaxKernel
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -278,6 +279,7 @@ flowchart TB
         automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
+        forge_megakernel["ForgeMegakernel<br/><i>Verified decode megakernel generation</i>"]
         harness_engineering["Harness Engineering<br/><i>Evidence-backed harness and controller</i>"]
         k_search["K-Search<br/><i>Co-evolving world model</i>"]
         keet["KEET<br/><i>Profiling explanation</i>"]
@@ -369,10 +371,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (72 papers)</b></summary>
+<summary><b>📋 View All Methods (73 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels**](https://arxiv.org/abs/2609.12379) | arXiv | 2026-09 | - | Leshan Li | Zhiyuan Liu | Tsinghua University; University of Chinese Academy of Sciences; ModelBest | `CUDA` `Agent` `Decode-Megakernel` `Milestone-Knowledge-Base` `Mid-State-Oracle` `SGLang` `H100` |
 | [**MaxKernel: Agentic Kernel Generation for TPUs**](https://arxiv.org/abs/2609.04523) | arXiv | 2026-09 | [GitHub](https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel) | Shangkun Wang | Sethu Sankaran | Google Cloud AI Infrastructure | `TPU` `Pallas` `JAX` `Multi-Agent` `Human-in-the-Loop` `Autonomous-Search` `JaxBench` |
 | [**CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language**](https://arxiv.org/abs/2609.00058) | arXiv | 2026-08 | - | Qi Fan | Yehan Ma | Shanghai Jiao Tong University | `CUDA` `Text2CUDA` `Agent` `Intermediate-Structured-Generation` `Synthesis-Based-Verification` `Feedback-Adaptive-Evolution` |
 | [**AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification**](https://arxiv.org/abs/2608.20711) | arXiv | 2026-08 | - | Ji Liu | Emad Barsoum | AMD; Southern University of Science and Technology | `AMD-GPU` `AMDGCN` `Assembly-Optimization` `Agent` `Binary-Rewriting` `Functional-Equivalence` `MI300X` `MI308X` |

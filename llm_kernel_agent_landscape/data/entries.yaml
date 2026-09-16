@@ -1282,6 +1282,29 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: forge_megakernel
+  name: ForgeMegakernel
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Verified decode megakernel generation
+  backends:
+  - CUDA
+  - SGLang
+  method_tags:
+  - coding-agent
+  - decode-megakernel
+  - milestone-knowledge-base
+  - mid-state-oracle
+  - correctness-gate
+  source: awesome_llm_kernel_agent
+  affiliation_short: Tsinghua · UCAS · ModelBest
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.12379
+  notes: Generates per-model persistent decode megakernels through ten reusable structural milestones and an independent oracle that validates intermediate states, precision, error, and measured performance.
 - id: maxkernel
   name: MaxKernel
   year: 2026
