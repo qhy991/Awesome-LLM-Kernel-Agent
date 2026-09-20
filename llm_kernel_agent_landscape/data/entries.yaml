@@ -577,6 +577,30 @@
   display_priority: 4
   show_in_report: false
   show_in_full: true
+- id: amd_kernel_vault
+  name: AMDKernelVault
+  year: 2026
+  period: 2026+
+  category: Datasets
+  subcategory: Execution-verified AMD kernel corpus
+  backends:
+  - HIP
+  - Triton
+  - ROCm
+  method_tags:
+  - dataset
+  - agentic-generation
+  - execution-verified
+  - sft
+  - rl
+  source: awesome_llm_kernel_agent
+  affiliation_short: AMD
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.12471
+  notes: Releases execution-verified HIP and Triton kernel data and agent-driven ROCm generation pipelines; compact-model SFT and RL demonstrate corpus utility.
 - id: stack_v2_hpc
   name: Stack v2 HPC
   year: 2024

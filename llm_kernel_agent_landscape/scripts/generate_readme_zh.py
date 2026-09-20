@@ -306,7 +306,7 @@ def main() -> int:
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-116+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-117+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 {zh['lang_link']}

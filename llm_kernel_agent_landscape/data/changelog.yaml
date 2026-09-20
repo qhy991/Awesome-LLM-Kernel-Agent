@@ -58,3 +58,6 @@
 - date: 2026-09-16
   version: v0.5.14
   summary: "Added ForgeMegakernel — milestone-guided agentic decode-megakernel generation with an independent mid-state oracle."
+- date: 2026-09-20
+  version: v0.5.15
+  summary: "Added AMDKernelVault — execution-verified AMD HIP/Triton corpus and agentic ROCm data-generation pipelines."

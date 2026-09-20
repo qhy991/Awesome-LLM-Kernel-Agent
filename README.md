@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-116+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-117+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 116+
+- **Total Papers**: 117+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -212,7 +212,8 @@ timeline
              : Zomboss
              : PTXBench
              : Contract-Grade Verifier
-    2026-09 : ForgeMegakernel
+    2026-09 : AMDKernelVault
+             : ForgeMegakernel
              : MaxKernel
 ```
 
@@ -301,6 +302,7 @@ flowchart TB
         flashinfer["FlashInfer<br/><i>Inference kernels</i>"]
         kb_samples["KB-samples<br/><i>Benchmark samples</i>"]
         kernelbook["KernelBook<br/><i>PyTorch→Triton pairs</i>"]
+        amd_kernel_vault["AMDKernelVault<br/><i>Execution-verified AMD kernel corpus</i>"]
         liger_kernel["Liger-Kernel<br/><i>Kernel library</i>"]
     end
     subgraph benchmarks["Evaluation"]
@@ -471,6 +473,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | Title                                                                                                                                                                                                                                                                                |    Venue    |  Date   |                                                          Code                                                           |          First Author          |          Last Author          |                                        Affiliation                                        |             Platforms              |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization**](https://arxiv.org/abs/2609.12471) | arXiv | 2026-09 | [Code](https://github.com/AMD-AGI/hip_kernel_llm_lab) · [Dataset](https://huggingface.co/datasets/amd/AIG-Datasets) | Ji Liu | Emad Barsoum | AMD | `HIP` `Triton` `ROCm` `Dataset` `Agentic-Generation` `Execution-Verified` `SFT` `RL` |
 | [**InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents**](https://arxiv.org/abs/2607.20468) | arXiv | 2026-07 | [GitHub](https://github.com/aisa-group/InferenceBench) | Jehyeok Yeon | Maksym Andriushchenko | AISA | `H100` `vLLM` `SGLang` `Inference-Serving` `Agent-Benchmark` `Open-Ended-Optimization` |
 | [**ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?**](https://arxiv.org/abs/2602.19594) | arXiv | 2026-02 | [GitHub](https://github.com/ISO-Bench/ISO-Bench) | Ayush Nangia | Paras Chopra | Lossfunk | `vLLM` `SGLang` `Coding-Agent` `Inference-Optimization` `Performance-Patches` `Benchmark` |
 | [**PTXBench: Benchmark and Adapt LLMs for GPU Kernel Optimization with Architecture-specific PTX**](https://arxiv.org/abs/2608.17379) | arXiv | 2026-08 | [GitHub](https://github.com/zhang677/PTXBench) | Genghan Zhang | Kunle Olukotun | Stanford University; Carnegie Mellon University; RadixArk; Independent Researchers | `CUDA` `PTX` `Benchmark` `H100` `B200` `Target-Instruction-Execution` `SFT` |
