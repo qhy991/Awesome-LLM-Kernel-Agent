@@ -1306,6 +1306,29 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: ai_as_compiler
+  name: AI as a Compiler
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Agentic Triton-to-PTX lowering
+  backends:
+  - Triton
+  - PTX
+  method_tags:
+  - ai-lowering
+  - agent
+  - numerical-verification
+  - symbolic-verification
+  - blackwell
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford · EPFL
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.36800
+  notes: Uses an LLM agent to lower Triton directly to interface-compatible PTX, with execution, profiling, numerical checks, and optional symbolic verification across Ada, Hopper, and Blackwell.
 - id: forge_megakernel
   name: ForgeMegakernel
   year: 2026

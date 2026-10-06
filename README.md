@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-118+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-119+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 118+
+- **Total Papers**: 119+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -213,6 +213,7 @@ timeline
              : PTXBench
              : Contract-Grade Verifier
     2026-09 : AMDKernelVault
+             : AI as a Compiler
              : ForgeMegakernel
              : MaxKernel
 ```
@@ -273,6 +274,7 @@ flowchart TB
         stark["STARK<br/><i>Multi-agent team</i>"]
         swizzleperf["SwizzlePerf<br/><i>Hardware-aware LLM</i>"]
         cupilot["cuPilot<br/><i>Strategy-coordinated evolution</i>"]
+        ai_as_compiler["AI as a Compiler<br/><i>Agentic Triton-to-PTX lowering</i>"]
         argus["ARGUS<br/><i>Data-flow invariants</i>"]
         adaexplore["AdaExplore<br/><i>Failure-driven search</i>"]
         atrex_kernel_agent["Atrex-Kernel-Agent<br/><i>Production trace-driven optimization</i>"]
@@ -373,10 +375,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (73 papers)</b></summary>
+<summary><b>📋 View All Methods (74 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**AI as a Compiler: Compiling Triton Kernels without the Triton Compiler**](https://arxiv.org/abs/2609.36800) | arXiv | 2026-09 | - | François Costa | Azalia Mirhoseini | Stanford University; EPFL | `Triton` `PTX` `AI-Lowering` `Agent` `Numerical-Verification` `Symbolic-Verification` `Ada` `Hopper` `Blackwell` |
 | [**ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels**](https://arxiv.org/abs/2609.12379) | arXiv | 2026-09 | - | Leshan Li | Zhiyuan Liu | Tsinghua University; University of Chinese Academy of Sciences; ModelBest | `CUDA` `Agent` `Decode-Megakernel` `Milestone-Knowledge-Base` `Mid-State-Oracle` `SGLang` `H100` |
 | [**MaxKernel: Agentic Kernel Generation for TPUs**](https://arxiv.org/abs/2609.04523) | arXiv | 2026-09 | [GitHub](https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel) | Shangkun Wang | Sethu Sankaran | Google Cloud AI Infrastructure | `TPU` `Pallas` `JAX` `Multi-Agent` `Human-in-the-Loop` `Autonomous-Search` `JaxBench` |
 | [**CUDA-Harness: Harnessing Agentic CUDA Kernel Generation and Optimization from Natural Language**](https://arxiv.org/abs/2609.00058) | arXiv | 2026-08 | - | Qi Fan | Yehan Ma | Shanghai Jiao Tong University | `CUDA` `Text2CUDA` `Agent` `Intermediate-Structured-Generation` `Synthesis-Based-Verification` `Feedback-Adaptive-Evolution` |
