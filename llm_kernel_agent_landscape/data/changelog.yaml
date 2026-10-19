@@ -70,3 +70,6 @@
 - date: 2026-10-19
   version: v0.5.18
   summary: "Added SWE-Serve — repository-grounded production inference-engineering tasks from SGLang changes."
+- date: 2026-10-19
+  version: v0.5.19
+  summary: "Restored SEIS alongside SWE-Serve after scope clarification."
