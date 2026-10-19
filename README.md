@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-119+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-120+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 119+
+- **Total Papers**: 120+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -216,6 +216,7 @@ timeline
              : AI as a Compiler
              : ForgeMegakernel
              : MaxKernel
+    2026-10 : SEIS
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -291,6 +292,7 @@ flowchart TB
         kernelskill["KernelSkill<br/><i>Multi-agent + memory</i>"]
         model2kernel["Model2Kernel<br/><i>Symbolic execution safety</i>"]
         optiml["OptiML<br/><i>Two-stage synthesis</i>"]
+        seis["SEIS<br/><i>Agentic inference-engine self-evolution</i>"]
         solar["SOLAR<br/><i>SOL performance analysis</i>"]
         stitchcuda["StitchCUDA<br/><i>Multi-agent + RL</i>"]
         xe_forge["Xe-Forge<br/><i>Intel GPU multi-stage</i>"]
@@ -375,10 +377,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (74 papers)</b></summary>
+<summary><b>📋 View All Methods (75 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**SEIS: Self-Evolving Inference Systems**](https://arxiv.org/abs/2610.04646) | arXiv | 2026.10 | [GitHub](https://github.com/smth-fun/self-evolving-inference-system) | Zhen Xu | Ce Zhang | University of Chicago | `Inference-Engine` `Agentic-Self-Evolution` `mini-sglang` `CUDA` `Triton` `Speculative-Decoding` `H100` |
 | [**AI as a Compiler: Compiling Triton Kernels without the Triton Compiler**](https://arxiv.org/abs/2609.36800) | arXiv | 2026-09 | - | François Costa | Azalia Mirhoseini | Stanford University; EPFL | `Triton` `PTX` `AI-Lowering` `Agent` `Numerical-Verification` `Symbolic-Verification` `Ada` `Hopper` `Blackwell` |
 | [**ForgeMegakernel: A General Framework for Efficient Auto-Regressive Model Decode Megakernels**](https://arxiv.org/abs/2609.12379) | arXiv | 2026-09 | - | Leshan Li | Zhiyuan Liu | Tsinghua University; University of Chinese Academy of Sciences; ModelBest | `CUDA` `Agent` `Decode-Megakernel` `Milestone-Knowledge-Base` `Mid-State-Oracle` `SGLang` `H100` |
 | [**MaxKernel: Agentic Kernel Generation for TPUs**](https://arxiv.org/abs/2609.04523) | arXiv | 2026-09 | [GitHub](https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel) | Shangkun Wang | Sethu Sankaran | Google Cloud AI Infrastructure | `TPU` `Pallas` `JAX` `Multi-Agent` `Human-in-the-Loop` `Autonomous-Search` `JaxBench` |
