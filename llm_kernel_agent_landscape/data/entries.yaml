@@ -1306,29 +1306,29 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
-- id: seis
-  name: SEIS
+- id: swe_serve
+  name: SWE-Serve
   year: 2026
   period: 2026+
-  category: Agent4Kernel
-  subcategory: Agentic inference-engine self-evolution
+  category: Benchmarks
+  subcategory: Production inference-engineering evaluation
   backends:
-  - CUDA
-  - Triton
-  - mini-sglang
+  - SGLang
+  - H100
   method_tags:
-  - agentic-self-evolution
-  - inference-engine
-  - kernel-optimization
-  - speculative-decoding
+  - benchmark
+  - coding-agent
+  - inference-serving
+  - repository-level
+  - end-to-end-tests
   source: awesome_llm_kernel_agent
-  affiliation_short: UChicago
+  affiliation_short: NVIDIA
   display_priority: 1
   show_in_report: false
   show_in_full: true
-  timeline_date: "2026-10"
-  url: https://arxiv.org/abs/2610.04646
-  notes: Evolves mini-sglang through sequential agent sessions that inherit code and reports, combining kernel, runtime, and speculative-decoding changes under correctness evaluation.
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.26777
+  notes: Evaluates agents on 53 repository-grounded SGLang production tasks, with hidden functional and regression tests, end-to-end serving coverage, integrity controls, and CPU or single-H100 execution.
 - id: ai_as_compiler
   name: AI as a Compiler
   year: 2026
