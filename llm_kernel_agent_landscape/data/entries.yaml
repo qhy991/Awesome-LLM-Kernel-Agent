@@ -1306,6 +1306,78 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: kernelopt
+  name: KernelOPT
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Dispatch-aware compiled-model optimization
+  backends:
+  - PyTorch Inductor
+  - Triton
+  - Helion
+  method_tags:
+  - agent
+  - ncu-profiling
+  - dispatch-aware
+  - model-level-verification
+  - verification-gates
+  source: awesome_llm_kernel_agent
+  affiliation_short: Red Hat
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.30059
+  notes: Preserves cuBLAS and cuDNN dispatch, searches generated Triton sub-kernels with profiling-guided agents, and accepts re-stitched models only after four static, correctness, model-level, and performance gates.
+- id: flashvector
+  name: FlashVector
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Hierarchical serving-stack optimization
+  backends:
+  - GPU kernels
+  - Model server
+  - Feature processing
+  method_tags:
+  - agent
+  - model-serving
+  - computation-graph
+  - inference-server
+  - feature-processing
+  source: awesome_llm_kernel_agent
+  affiliation_short: Stanford · Unity
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.17391
+  notes: Extends agentic optimization across GPU kernels, computation graphs, NVIDIA Triton Inference Server, and on-demand feature processing in a production recommender serving stack.
+- id: llm4llm
+  name: LLM4LLM
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Deployment-aware kernel optimization
+  backends:
+  - CUDA
+  - A100
+  - H100
+  method_tags:
+  - agent
+  - deployment-aware
+  - phase-aware
+  - in-model-validation
+  - experience-guided-search
+  source: awesome_llm_kernel_agent
+  affiliation_short: Xidian · ZGC Academy
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-08"
+  url: https://arxiv.org/abs/2608.21836
+  notes: Extracts phase-aware tasks from target inference scripts and accepts patches only after profiling, experience-guided episodic search, and validation inside the full model workload.
 - id: seis
   name: SEIS
   year: 2026

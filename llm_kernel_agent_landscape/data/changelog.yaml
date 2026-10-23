@@ -73,3 +73,6 @@
 - date: 2026-10-19
   version: v0.5.19
   summary: "Restored SEIS alongside SWE-Serve after scope clarification."
+- date: 2026-10-23
+  version: v0.5.20
+  summary: "Added LLM4LLM, KernelOPT, and FlashVector for deployment-aware, dispatch-aware, and serving-stack agentic optimization."

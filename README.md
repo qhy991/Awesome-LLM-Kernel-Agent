@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-121+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-124+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 121+
+- **Total Papers**: 124+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -206,13 +206,16 @@ timeline
              : Atrex-Kernel-Agent
              : InferenceBench
              : KernelGenBench
-    2026-08 : CUDA-Harness
+    2026-08 : LLM4LLM
+             : CUDA-Harness
              : AsmEvo
              : CAKE
              : Zomboss
              : PTXBench
              : Contract-Grade Verifier
     2026-09 : AMDKernelVault
+             : KernelOPT
+             : FlashVector
              : SWE-Serve
              : AI as a Compiler
              : ForgeMegakernel
@@ -284,13 +287,16 @@ flowchart TB
         automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
+        flashvector["FlashVector<br/><i>Hierarchical serving-stack optimization</i>"]
         forge_megakernel["ForgeMegakernel<br/><i>Verified decode megakernel generation</i>"]
         harness_engineering["Harness Engineering<br/><i>Evidence-backed harness and controller</i>"]
         k_search["K-Search<br/><i>Co-evolving world model</i>"]
         keet["KEET<br/><i>Profiling explanation</i>"]
         kernel_contracts["Kernel Contracts<br/><i>Correctness specification</i>"]
         kernelfoundry["KernelFoundry<br/><i>Hardware-aware evolution</i>"]
+        kernelopt["KernelOPT<br/><i>Dispatch-aware compiled-model optimization</i>"]
         kernelskill["KernelSkill<br/><i>Multi-agent + memory</i>"]
+        llm4llm["LLM4LLM<br/><i>Deployment-aware kernel optimization</i>"]
         model2kernel["Model2Kernel<br/><i>Symbolic execution safety</i>"]
         optiml["OptiML<br/><i>Two-stage synthesis</i>"]
         seis["SEIS<br/><i>Agentic inference-engine self-evolution</i>"]
@@ -379,10 +385,13 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (76 papers)</b></summary>
+<summary><b>📋 View All Methods (79 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization**](https://arxiv.org/abs/2609.30059) | arXiv | 2026-09 | [GitHub](https://github.com/TorchedHat/KernelOPT) | Aheli Poddar | Rohit Singh Rathaur | Red Hat | `PyTorch-Inductor` `Triton` `Helion` `Agent` `NCU` `Model-Level-Verification` `H200` |
+| [**FlashVector: Agent for Hierarchical Model Serving Stack Optimization**](https://arxiv.org/abs/2609.17391) | arXiv | 2026-09 | - | Qi Wu | Sean Sheng | Stanford University; Unity Vector AI Team | `Model-Serving` `Agent` `GPU-Kernel` `Computation-Graph` `Triton-Inference-Server` `Feature-Processing` |
+| [**LLM4LLM: Bridging Kernel Benchmarks and Real Deployment via Closed-Loop Agentic Optimization**](https://arxiv.org/abs/2608.21836) | EMNLP 2026 | 2026-08 | [GitHub](https://github.com/hzeng2000/LLM4LLM) | Hui Zeng | Xinran Wei | Xidian University; Zhongguancun Academy; Zhongguancun Institute of Artificial Intelligence | `CUDA` `Agent` `Deployment-Aware` `Phase-Aware` `In-Model-Validation` `A100` `H100` |
 | [**SEIS: Self-Evolving Inference Systems**](https://arxiv.org/abs/2610.04646) | arXiv | 2026.10 | [GitHub](https://github.com/smth-fun/self-evolving-inference-system) | Zhen Xu | Ce Zhang | University of Chicago | `Inference-Engine` `Agentic-Self-Evolution` `mini-sglang` `CUDA` `Triton` `Speculative-Decoding` `H100` |
 | [**SWE-Serve: Benchmarking Agentic Engineering for Production Inference Serving**](https://arxiv.org/abs/2609.26777) | arXiv | 2026.09 | [GitHub](https://github.com/NVIDIA/swe-serve) | Jennifer Williams | Jiantao Jiao | NVIDIA | `SGLang` `Inference-Serving` `Coding-Agent` `Repository-Level` `E2E-Tests` `H100` |
 | [**AI as a Compiler: Compiling Triton Kernels without the Triton Compiler**](https://arxiv.org/abs/2609.36800) | arXiv | 2026-09 | - | François Costa | Azalia Mirhoseini | Stanford University; EPFL | `Triton` `PTX` `AI-Lowering` `Agent` `Numerical-Verification` `Symbolic-Verification` `Ada` `Hopper` `Blackwell` |
