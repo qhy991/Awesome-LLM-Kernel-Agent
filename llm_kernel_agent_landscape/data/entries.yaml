@@ -1306,6 +1306,51 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: justgoal
+  name: JustGoal
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Goal-only kernel optimization baseline
+  backends:
+  - CUDA
+  - B200
+  method_tags:
+  - coding-agent
+  - goal-only-baseline
+  - kernel-optimization
+  - same-model-comparison
+  source: awesome_llm_kernel_agent
+  affiliation_short: Tsinghua · ModelBest
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-10"
+  url: https://arxiv.org/abs/2610.36434
+  notes: Studies a general-purpose agent given an optimization objective and constraints, with same-model comparisons against specialized kernel-agent infrastructure on B200.
+- id: evolving_agent_teams
+  name: Evolving Agent Teams
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Supervisor-driven team evolution
+  backends:
+  - CUDA
+  - AMD GPU
+  - Apple Silicon
+  method_tags:
+  - multi-agent
+  - team-evolution
+  - kernel-optimization
+  - persistent-memory
+  source: awesome_llm_kernel_agent
+  affiliation_short: UC Berkeley
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-10"
+  url: https://arxiv.org/abs/2610.36848
+  notes: Uses a supervisor to diagnose stalled search and restructure coding-agent teams using persistent learning and evolution records, with GPU kernel optimization among its evaluated tasks.
 - id: kernelopt
   name: KernelOPT
   year: 2026
@@ -1651,6 +1696,30 @@
   timeline_date: "2026-07"
   url: https://arxiv.org/abs/2607.14541
   notes: Combines production-trace weights, per-problem roofline ceilings, profile-driven measure-revise search, optimization dropout, and a layered knowledge base.
+- id: siliconbench
+  name: SiliconBench
+  year: 2026
+  period: 2026+
+  category: Benchmarks
+  subcategory: Unified-memory LLM serving evaluation
+  backends:
+  - Apple Silicon
+  - MLX
+  - DGX Spark
+  method_tags:
+  - benchmark
+  - inference-serving
+  - unified-memory
+  - fidelity
+  - concurrency
+  source: awesome_llm_kernel_agent
+  affiliation_short: Penn State · UIUC · EXO
+  display_priority: 1
+  show_in_report: false
+  show_in_full: true
+  timeline_date: "2026-09"
+  url: https://arxiv.org/abs/2609.19169
+  notes: Evaluates Apple Silicon LLM serving across speed, memory headroom, output fidelity, concurrency, and model support, with a DGX Spark comparison.
 - id: inferencebench
   name: InferenceBench
   year: 2026

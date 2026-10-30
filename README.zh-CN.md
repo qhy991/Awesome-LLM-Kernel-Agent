@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-124+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-127+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：124+
+- **论文总数**：127+
 - **最近更新**：2026 年 8 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -220,7 +220,10 @@ timeline
              : AI as a Compiler
              : ForgeMegakernel
              : MaxKernel
-    2026-10 : SEIS
+             : SiliconBench
+    2026-10 : JustGoal
+             : Evolving Agent Teams
+             : SEIS
 ```
 
 <!-- LANDSCAPE-TIMELINE-FULL:END -->
@@ -286,10 +289,12 @@ flowchart TB
         autokernel["AutoKernel<br/><i>Iterative agent-driven search</i>"]
         automegakernel["AutoMegaKernel<br/><i>Megakernel agent harness</i>"]
         cuco["CUCo<br/><i>Compute-comm co-design</i>"]
+        evolving_agent_teams["Evolving Agent Teams<br/><i>Supervisor-driven team evolution</i>"]
         fact["FACT<br/><i>3-stage agentic</i>"]
         flashvector["FlashVector<br/><i>Hierarchical serving-stack optimization</i>"]
         forge_megakernel["ForgeMegakernel<br/><i>Verified decode megakernel generation</i>"]
         harness_engineering["Harness Engineering<br/><i>Evidence-backed harness and controller</i>"]
+        justgoal["JustGoal<br/><i>Goal-only kernel optimization baseline</i>"]
         k_search["K-Search<br/><i>Co-evolving world model</i>"]
         keet["KEET<br/><i>Profiling explanation</i>"]
         kernel_contracts["Kernel Contracts<br/><i>Correctness specification</i>"]
@@ -342,6 +347,7 @@ flowchart TB
         rooflinebench["RooflineBench<br/><i>Roofline analysis</i>"]
         sol_execbench["SOL-ExecBench<br/><i>Speed-of-light</i>"]
         swe_serve["SWE-Serve<br/><i>Production inference-engineering evaluation</i>"]
+        siliconbench["SiliconBench<br/><i>Unified-memory LLM serving evaluation</i>"]
     end
     subgraph systems___platforms["集成系统"]
         direction TB
@@ -386,10 +392,12 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（79 篇）</b></summary>
+<summary><b>📋 查看全部方法（81 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels**](https://arxiv.org/abs/2610.36434) | arXiv | 2026-10 | [GitHub](https://github.com/OpenBMB/JustGoal) | Yaojian Chen | Zhiyuan Liu | Tsinghua University; ModelBest; Harbin Institute of Technology; University of Chinese Academy of Sciences | `CUDA` `B200` `Goal-Only-Baseline` `Kernel-Optimization` `Agent` `Evaluation` |
+| [**Evolving Agent Teams**](https://arxiv.org/abs/2610.36848) | NeurIPS 2026 | 2026-10 | [GitHub](https://github.com/caoshiyi/EAT) | Shiyi Cao | Ion Stoica | University of California, Berkeley | `Multi-Agent` `Team-Evolution` `GPU-Kernel` `Persistent-Memory` `CUDA` `AMD` `Apple-Silicon` |
 | [**KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization**](https://arxiv.org/abs/2609.30059) | arXiv | 2026-09 | [GitHub](https://github.com/TorchedHat/KernelOPT) | Aheli Poddar | Rohit Singh Rathaur | Red Hat | `PyTorch-Inductor` `Triton` `Helion` `Agent` `NCU` `Model-Level-Verification` `H200` |
 | [**FlashVector: Agent for Hierarchical Model Serving Stack Optimization**](https://arxiv.org/abs/2609.17391) | arXiv | 2026-09 | - | Qi Wu | Sean Sheng | Stanford University; Unity Vector AI Team | `Model-Serving` `Agent` `GPU-Kernel` `Computation-Graph` `Triton-Inference-Server` `Feature-Processing` |
 | [**LLM4LLM: Bridging Kernel Benchmarks and Real Deployment via Closed-Loop Agentic Optimization**](https://arxiv.org/abs/2608.21836) | EMNLP 2026 | 2026-08 | [GitHub](https://github.com/hzeng2000/LLM4LLM) | Hui Zeng | Xinran Wei | Xidian University; Zhongguancun Academy; Zhongguancun Institute of Artificial Intelligence | `CUDA` `Agent` `Deployment-Aware` `Phase-Aware` `In-Model-Validation` `A100` `H100` |
@@ -492,6 +500,7 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 平台 |
 | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------: | :-----: | :---------------------------------------------------------------------------------------------------------------------: | :----------------------------: | :---------------------------: | :---------------------------------------------------------------------------------------: | :--------------------------------: |
+| [**SiliconBench: Speed, Memory, and Fidelity for LLM Serving on Unified-Memory Desktops**](https://arxiv.org/abs/2609.19169) | arXiv | 2026-09 | [GitHub](https://github.com/WindChimeRan/SiliconBench) | Ranran Haoran Zhang | Rui Zhang | Penn State University; University of Illinois Urbana-Champaign; EXO Labs | `Apple-Silicon` `Unified-Memory` `LLM-Serving` `Benchmark` `Latency` `Fidelity` |
 | [**AMDKernelVault: Large-Scale Datasets and Agentic Training for AMD GPU Kernel Optimization**](https://arxiv.org/abs/2609.12471) | arXiv | 2026-09 | [Code](https://github.com/AMD-AGI/hip_kernel_llm_lab) · [Dataset](https://huggingface.co/datasets/amd/AIG-Datasets) | Ji Liu | Emad Barsoum | AMD | `HIP` `Triton` `ROCm` `Dataset` `Agentic-Generation` `Execution-Verified` `SFT` `RL` |
 | [**InferenceBench: A Benchmark for Open-Ended LLM Inference Optimization by AI Agents**](https://arxiv.org/abs/2607.20468) | arXiv | 2026-07 | [GitHub](https://github.com/aisa-group/InferenceBench) | Jehyeok Yeon | Maksym Andriushchenko | AISA | `H100` `vLLM` `SGLang` `Inference-Serving` `Agent-Benchmark` `Open-Ended-Optimization` |
 | [**ISO-Bench: Can Coding Agents Optimize Real-World Inference Workloads?**](https://arxiv.org/abs/2602.19594) | arXiv | 2026-02 | [GitHub](https://github.com/ISO-Bench/ISO-Bench) | Ayush Nangia | Paras Chopra | Lossfunk | `vLLM` `SGLang` `Coding-Agent` `Inference-Optimization` `Performance-Patches` `Benchmark` |
