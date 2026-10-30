@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awesome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-127+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-128+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [English README](README.md)
@@ -41,7 +41,7 @@ GPU 内核编程（CUDA、Triton、HIP 等）需要并行计算、内存层次�
 
 ### 📊 仓库统计
 
-- **论文总数**：127+
+- **论文总数**：128+
 - **最近更新**：2026 年 8 月
 - **覆盖平台**：CUDA、Triton、HIP、Metal、NPU、TPU
 - **主要方法**：Agent、RL、微调、RAG、Prompt Engineering
@@ -392,10 +392,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > 本节涵盖使用 LLM 在各平台上自动生成与优化 GPU 内核的方法。
 
 <details open>
-<summary><b>📋 查看全部方法（81 篇）</b></summary>
+<summary><b>📋 查看全部方法（82 篇）</b></summary>
 
 | 标题 | 发表 venue | 日期 | 代码 | 第一作者 | 末位作者 | 单位 | 主题 |
 | :--- | :------ | :--- | :--- | :--- | :--- | :--- | :--- |
+| [**ForgeKernel: Self-Evolving Kernels Catching and Surpassing Experts and Agents**](https://openreview.net/forum?id=EtV3f5BPD4) | OpenReview | - | - | - | - | - | `Kernel-Optimization` `Agent` `Self-Evolution` |
 | [**JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels**](https://arxiv.org/abs/2610.36434) | arXiv | 2026-10 | [GitHub](https://github.com/OpenBMB/JustGoal) | Yaojian Chen | Zhiyuan Liu | Tsinghua University; ModelBest; Harbin Institute of Technology; University of Chinese Academy of Sciences | `CUDA` `B200` `Goal-Only-Baseline` `Kernel-Optimization` `Agent` `Evaluation` |
 | [**Evolving Agent Teams**](https://arxiv.org/abs/2610.36848) | NeurIPS 2026 | 2026-10 | [GitHub](https://github.com/caoshiyi/EAT) | Shiyi Cao | Ion Stoica | University of California, Berkeley | `Multi-Agent` `Team-Evolution` `GPU-Kernel` `Persistent-Memory` `CUDA` `AMD` `Apple-Silicon` |
 | [**KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization**](https://arxiv.org/abs/2609.30059) | arXiv | 2026-09 | [GitHub](https://github.com/TorchedHat/KernelOPT) | Aheli Poddar | Rohit Singh Rathaur | Red Hat | `PyTorch-Inductor` `Triton` `Helion` `Agent` `NCU` `Model-Level-Verification` `H200` |

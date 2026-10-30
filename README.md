@@ -8,7 +8,7 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue.svg)](https://github.com/qhy991/Awsome-LLM-Kernel-Agent)
-[![Papers](https://img.shields.io/badge/Papers-127+-green.svg)](#)
+[![Papers](https://img.shields.io/badge/Papers-128+-green.svg)](#)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 [中文 README](README.zh-CN.md)
@@ -41,7 +41,7 @@ GPU kernel programming (CUDA, Triton, HIP, etc.) requires deep expertise in para
 
 ### 📊 Repository Statistics
 
-- **Total Papers**: 127+
+- **Total Papers**: 128+
 - **Latest Addition**: August 2026
 - **Coverage**: CUDA, Triton, HIP, Metal, NPU, TPU
 - **Approaches**: Agent-based, RL, Fine-tuning, RAG, Prompt Engineering
@@ -391,10 +391,11 @@ cd llm_kernel_agent_landscape && make svg pptx drawio
 > This section covers methods that use LLMs to automatically generate and optimize GPU kernels across various platforms.
 
 <details open>
-<summary><b>📋 View All Methods (81 papers)</b></summary>
+<summary><b>📋 View All Methods (82 papers)</b></summary>
 
 | Title                                                                                                                                                                                                                                     |     Venue      |  Date   |                                                   Code                                                    |    First Author     |    Last Author     |                                                                                                                                     Affiliation                                                                                                                                     |                                     Topics                                      |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------: | :-----: | :-------------------------------------------------------------------------------------------------------: | :-----------------: | :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------: |
+| [**ForgeKernel: Self-Evolving Kernels Catching and Surpassing Experts and Agents**](https://openreview.net/forum?id=EtV3f5BPD4) | OpenReview | - | - | - | - | - | `Kernel-Optimization` `Agent` `Self-Evolution` |
 | [**JustGoal: With Only a Goal, the AI Baseline Is Above the Expert Kernels**](https://arxiv.org/abs/2610.36434) | arXiv | 2026-10 | [GitHub](https://github.com/OpenBMB/JustGoal) | Yaojian Chen | Zhiyuan Liu | Tsinghua University; ModelBest; Harbin Institute of Technology; University of Chinese Academy of Sciences | `CUDA` `B200` `Goal-Only-Baseline` `Kernel-Optimization` `Agent` `Evaluation` |
 | [**Evolving Agent Teams**](https://arxiv.org/abs/2610.36848) | NeurIPS 2026 | 2026-10 | [GitHub](https://github.com/caoshiyi/EAT) | Shiyi Cao | Ion Stoica | University of California, Berkeley | `Multi-Agent` `Team-Evolution` `GPU-Kernel` `Persistent-Memory` `CUDA` `AMD` `Apple-Silicon` |
 | [**KernelOPT: Dispatch-Aware Agentic Search for GPU Kernel Optimization**](https://arxiv.org/abs/2609.30059) | arXiv | 2026-09 | [GitHub](https://github.com/TorchedHat/KernelOPT) | Aheli Poddar | Rohit Singh Rathaur | Red Hat | `PyTorch-Inductor` `Triton` `Helion` `Agent` `NCU` `Model-Level-Verification` `H200` |

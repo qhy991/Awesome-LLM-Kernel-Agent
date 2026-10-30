@@ -1306,6 +1306,24 @@
   timeline_date: "2026-06"
   url: https://arxiv.org/abs/2606.26383
   notes: LLM-assisted source-to-SOL framework for validated speed-of-light bounds from PyTorch/JAX.
+- id: forgekernel
+  name: ForgeKernel
+  year: 2026
+  period: 2026+
+  category: Agent4Kernel
+  subcategory: Self-evolving kernel optimization
+  backends: []
+  method_tags:
+  - agent
+  - self-evolution
+  - kernel-optimization
+  source: awesome_llm_kernel_agent
+  affiliation_short: Unknown
+  display_priority: 1
+  show_in_report: false
+  show_in_full: false
+  url: https://openreview.net/forum?id=EtV3f5BPD4
+  notes: Title and paper link supplied by the user; author, publication date, and official code remain unverified.
 - id: justgoal
   name: JustGoal
   year: 2026
